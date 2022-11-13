@@ -1,0 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: $baseFont;
+}
+
+a {
+    @include fontSize(35);
+    text-decoration: none;
+    color: $baseColor;
+}
