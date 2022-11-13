@@ -1,0 +1,30 @@
+
+
+header {
+    background-image: url(/assets/coral_1.png), url(/assets/navBar.png);
+    min-height: 100vh;
+    background-size: 50%, 100%;
+    background-repeat: no-repeat;
+    background-position-y: 60%, 80px;  
+}
+
+
+span {
+    display: block;
+    color: $primary
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30%;
+    color: $tertiary;
+  
+}
+
+.shark img {
+    width: 60%;
+    position: absolute;
+    right: -100px;
+    bottom: 300px;
+    
+}

@@ -1,16 +1,24 @@
-.navBar {
-    background-image: url(/assets/navBar.png);
-    background-size: 100% 20%;
-    background-repeat: no-repeat;
-    min-height: 100vh;
 
+// .navBar {
+//     background-image: url(/assets/navBar.png);
+//     height: 20vh;
+//     background-repeat: no-repeat;
+//     background-size: 100% 100%;
+// }
+
+.navBar {
+    background-color: $secondary;
+    height: 80px;
+    width: 100%;
 }
+
+
 
 .hamburger {
     position: absolute;
     display:block;
-    right: 40px;
-    top: 20px;
+    right: 45px;
+    top: 30px;
     width: 40px;
     cursor: pointer;
     background-color: $primary;
@@ -67,6 +75,7 @@
     left: 0;
 }
 
+
 .mobileNav a:nth-child(2) {
-    margin: 60px 0;
+    margin: 60px ;
 }

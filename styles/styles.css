@@ -248,6 +248,7 @@ h3,
 h4,
 a {
   font-family: "Pacifico", cursive;
+  margin: 0;
 }
 
 a {
@@ -268,17 +269,16 @@ body {
 }
 
 .navBar {
-  background-image: url(/assets/navBar.png);
-  background-size: 100% 20%;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  background-color: #F3F3F4;
+  height: 80px;
+  width: 100%;
 }
 
 .hamburger {
   position: absolute;
   display: block;
-  right: 40px;
-  top: 20px;
+  right: 45px;
+  top: 30px;
   width: 40px;
   cursor: pointer;
   background-color: #DF8D6E;
@@ -348,5 +348,31 @@ body {
 }
 
 .mobileNav a:nth-child(2) {
-  margin: 60px 0;
+  margin: 60px;
+}
+
+header {
+  background-image: url(/assets/coral_1.png), url(/assets/navBar.png);
+  min-height: 100vh;
+  background-size: 50%, 100%;
+  background-repeat: no-repeat;
+  background-position-y: 60%, 80px;
+}
+
+span {
+  display: block;
+  color: #DF8D6E;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 30%;
+  color: #4E6D79;
+}
+
+.shark img {
+  width: 60%;
+  position: absolute;
+  right: -100px;
+  bottom: 300px;
 }
