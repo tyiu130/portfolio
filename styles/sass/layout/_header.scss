@@ -27,11 +27,12 @@ h1 {
 
 .shark {
     background-image: url(/assets/Shark.png);
-    height: 120px;
-    width: 200px;
+    height: 80px;
+    background-size: cover;
+    width: 100px;
     position: absolute;
-    right: -100px;
-    bottom: 0;
+    right: 0;
+    bottom: 55px;
 }
 
 .coral {
