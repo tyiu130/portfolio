@@ -9,3 +9,14 @@
 body {
     background-color: $baseColor;
 }
+
+.backgroundImg {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+

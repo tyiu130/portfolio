@@ -245,10 +245,27 @@ html {
 h1,
 h2,
 h3,
-h4,
 a {
   font-family: "Pacifico", cursive;
   margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 a {
@@ -266,6 +283,16 @@ a {
 
 body {
   background-color: #FBF7F6;
+}
+
+.backgroundImg {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .navBar {
@@ -352,35 +379,104 @@ body {
 }
 
 header {
-  background-image: url(/assets/coral_1.png), url(/assets/navBar.png);
+  background-image: url(/assets/navBar.png);
   min-height: 60vh;
-  background-size: 50%, 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position-y: bottom, 80px;
+  background-position-y: 80px;
+  position: relative;
 }
 
 span {
   display: block;
   color: #DF8D6E;
+  margin-top: 20px;
 }
 
 h1 {
   text-align: center;
-  padding-top: 30%;
+  padding-top: 35%;
   color: #4E6D79;
 }
 
-.shark img {
-  width: 60%;
+.shark {
+  background-image: url(/assets/Shark.png);
+  height: 120px;
+  width: 200px;
   position: absolute;
   right: -100px;
-  bottom: 300px;
+  bottom: 0;
+}
+
+.coral {
+  background-image: url(/assets/coral_1.png);
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  bottom: -90px;
+  left: -20px;
 }
 
 .about {
   background-image: url(/assets/aboutMe.png);
-  height: 300px;
+  height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  color: #FBF7F6;
+  background-position-x: -100px;
+}
+
+.about div {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.about p {
+  padding: 0 10px;
+}
+
+.profileImg {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills h2 {
+  color: #DF8D6E;
+}
+
+.skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillsList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 66.6666666667%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillsList li {
+  margin: 20px 15px;
+}
+
+.fa-brands {
+  font-size: 50px;
+  color: #4E6D79;
 }
