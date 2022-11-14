@@ -31,6 +31,7 @@
 
 .skills {
     text-align: center;
+    position: relative;
 }
 
 .skills h2 {
@@ -57,4 +58,25 @@
 .fa-brands {
     font-size: 50px;
     color: $tertiary;
+}
+
+.fishes {
+    background-image: url(/assets/fishes.png);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    rotate: 35deg;
+    
+}
+
+.fishesTwo {
+    background-image: url(/assets/fishes.png);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    rotate: -130deg;
+    left: -10px;
+    bottom: -30px;
 }
