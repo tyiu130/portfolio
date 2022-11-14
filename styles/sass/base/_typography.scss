@@ -6,9 +6,6 @@ a {
     margin: 0;
 }
 
-h1 {
-    @include fontSize(40)
-}
 
 h2 {
     @include fontSize(30)

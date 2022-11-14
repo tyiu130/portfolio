@@ -1,45 +1,31 @@
 
 
 header {
-    background-image: url(/assets/navBar.png);
-    min-height: 60vh;
-    background-size: 100%;
+    background-image: url(/assets/navBar.png), url(/assets/waves.png);
+    min-height: 100vh;
+    background-size: 100%, cover;
     background-repeat: no-repeat;
-    background-position-y: 80px; 
+    background-position-y: 80px, center; 
     position: relative;
     
 }
 
 
+
 span {
     display: block;
     color: $primary;
-    margin-top: 20px;
+    margin-top: 15px;
+    font-family: $baseFont;
+    @include fontSize(35);
 }
 
 h1 {
     text-align: center;
-    padding-top: 35%;
+    padding-top: 300px;
     color: $tertiary;
-  
+    @include fontSize(85);
+    
 }
 
 
-.shark {
-    background-image: url(/assets/Shark.png);
-    height: 80px;
-    background-size: cover;
-    width: 100px;
-    position: absolute;
-    right: 0;
-    bottom: 55px;
-}
-
-.coral {
-    background-image: url(/assets/coral_1.png);
-    height: 200px;
-    width: 400px;
-    position: absolute;
-    bottom: -90px;
-    left: -20px;
-}

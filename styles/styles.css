@@ -250,11 +250,6 @@ a {
   margin: 0;
 }
 
-h1 {
-  font-size: 40px;
-  font-size: 2rem;
-}
-
 h2 {
   font-size: 30px;
   font-size: 1.5rem;
@@ -379,51 +374,36 @@ ul {
 }
 
 header {
-  background-image: url(/assets/navBar.png);
-  min-height: 60vh;
-  background-size: 100%;
+  background-image: url(/assets/navBar.png), url(/assets/waves.png);
+  min-height: 100vh;
+  background-size: 100%, cover;
   background-repeat: no-repeat;
-  background-position-y: 80px;
+  background-position-y: 80px, center;
   position: relative;
 }
 
 span {
   display: block;
   color: #DF8D6E;
-  margin-top: 20px;
+  margin-top: 15px;
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+  font-size: 1.75rem;
 }
 
 h1 {
   text-align: center;
-  padding-top: 35%;
+  padding-top: 300px;
   color: #4E6D79;
-}
-
-.shark {
-  background-image: url(/assets/Shark.png);
-  height: 80px;
-  background-size: cover;
-  width: 100px;
-  position: absolute;
-  right: 0;
-  bottom: 55px;
-}
-
-.coral {
-  background-image: url(/assets/coral_1.png);
-  height: 200px;
-  width: 400px;
-  position: absolute;
-  bottom: -90px;
-  left: -20px;
+  font-size: 85px;
+  font-size: 4.25rem;
 }
 
 .about {
   background-image: url(/assets/aboutMe.png);
-  height: 350px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   color: #FBF7F6;
   background-position-x: -100px;
 }
