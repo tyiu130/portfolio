@@ -1,12 +1,4 @@
 
-.navBar {
-    background-color: $secondary;
-    height: 80px;
-    width: 100%;
-}
-
-
-
 .hamburger {
     position: absolute;
     display:block;
@@ -51,7 +43,8 @@
 
 .mobileNav {
     background-color: $primary;
-    min-height: 100vh;
+    min-height: 50vh;
+    border-radius: 8px;
     width: 100%;
     position: fixed;
     top:0;

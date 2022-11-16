@@ -1,11 +1,10 @@
 // ABOUT ME
 .about {
-    background-image: url(/assets/aboutMe.png);
+    // background-image: url(/assets/aboutMe.png);
+    background-color: $tertiary;
     height: 300px;
-    background-size:cover;
-    background-repeat: no-repeat;
     color: $baseColor;
-    background-position-x: -100px;
+   
    
 }
 
@@ -59,23 +58,7 @@
     color: $tertiary;
 }
 
-.fishes {
-    background-image: url(/assets/fishes.png);
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    right: 0;
-    top: -10px;
-    rotate: 35deg;
-    
-}
+// PROJECTS
 
-.fishesTwo {
-    background-image: url(/assets/fishes.png);
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    rotate: -130deg;
-    left: -10px;
-    bottom: -30px;
-}
+
+

@@ -290,12 +290,6 @@ ul {
   padding-left: 0;
 }
 
-.navBar {
-  background-color: #F3F3F4;
-  height: 80px;
-  width: 100%;
-}
-
 .hamburger {
   position: absolute;
   display: block;
@@ -342,7 +336,8 @@ ul {
 
 .mobileNav {
   background-color: #DF8D6E;
-  min-height: 100vh;
+  min-height: 50vh;
+  border-radius: 8px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -374,11 +369,10 @@ ul {
 }
 
 header {
-  background-image: url(/assets/navBar.png), url(/assets/waves.png);
+  background-image: url(/assets/susan-wilkinson-K9scvXSS4z4-unsplash.jpg);
   min-height: 100vh;
-  background-size: 100%, cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 80px, center;
   position: relative;
 }
 
@@ -394,18 +388,15 @@ span {
 h1 {
   text-align: center;
   padding-top: 300px;
-  color: #4E6D79;
+  color: #10234D;
   font-size: 85px;
   font-size: 4.25rem;
 }
 
 .about {
-  background-image: url(/assets/aboutMe.png);
+  background-color: #10234D;
   height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: #FBF7F6;
-  background-position-x: -100px;
 }
 
 .about div {
@@ -460,25 +451,5 @@ h1 {
 
 .fa-brands {
   font-size: 50px;
-  color: #4E6D79;
-}
-
-.fishes {
-  background-image: url(/assets/fishes.png);
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  right: 0;
-  top: -10px;
-  rotate: 35deg;
-}
-
-.fishesTwo {
-  background-image: url(/assets/fishes.png);
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  rotate: -130deg;
-  left: -10px;
-  bottom: -30px;
+  color: #10234D;
 }
