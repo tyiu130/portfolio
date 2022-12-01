@@ -1,11 +1,12 @@
 
 
 header {
-    background-image: url(/assets/susan-wilkinson-K9scvXSS4z4-unsplash.jpg);
+    background-image: url(/assets/landingpage-top.png);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    
     
 }
 
@@ -22,7 +23,7 @@ span {
 h1 {
     text-align: center;
     padding-top: 300px;
-    color: $tertiary;
+    color: $primary;
     @include fontSize(85);
     
 }

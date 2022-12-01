@@ -1,9 +1,8 @@
 // ABOUT ME
 .about {
     // background-image: url(/assets/aboutMe.png);
-    background-color: $tertiary;
     height: 300px;
-    color: $baseColor;
+    
    
    
 }
@@ -55,10 +54,18 @@
 
 .fa-brands {
     font-size: 50px;
-    color: $tertiary;
+    color: $primary;
 }
 
 // PROJECTS
 
 
+video {
+    width: 250px;
+    height: 250px;
+}
 
+.projectList a {
+    background-color: $primary;
+    padding: 5px;
+}

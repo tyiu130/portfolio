@@ -1,9 +1,12 @@
 h1,
 h2,
 h3,
-a {
+h4,
+p {
     font-family: $baseFont;
     margin: 0;
+    font-weight: 400;
+    color: $primary;
 }
 
 
@@ -21,6 +24,12 @@ h4 {
 a {
     @include fontSize(35);
     text-decoration: none;
-    color: $baseColor;
+    color: $primary;
 }
 
+
+
+.projectList a {
+    font-family: $secondaryFont;
+    @include fontSize(18);
+}

@@ -245,9 +245,12 @@ html {
 h1,
 h2,
 h3,
-a {
-  font-family: "Pacifico", cursive;
+h4,
+p {
+  font-family: "Noto Serif", serif;
   margin: 0;
+  font-weight: 400;
+  color: #4E6D79;
 }
 
 h2 {
@@ -256,7 +259,7 @@ h2 {
 }
 
 h4 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 18px;
@@ -267,7 +270,13 @@ a {
   font-size: 35px;
   font-size: 1.75rem;
   text-decoration: none;
-  color: #FBF7F6;
+  color: #4E6D79;
+}
+
+.projectList a {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 .wrapper {
@@ -277,7 +286,7 @@ a {
 }
 
 body {
-  background-color: #FBF7F6;
+  background-color: #F3F3F4;
 }
 
 .backgroundImg {
@@ -297,7 +306,7 @@ ul {
   top: 30px;
   width: 40px;
   cursor: pointer;
-  background-color: #DF8D6E;
+  background-color: transparent;
   border: none;
   border-radius: 45%;
   z-index: 30;
@@ -310,7 +319,7 @@ ul {
   display: block;
   width: 25px;
   height: 4px;
-  background-color: #FBF7F6;
+  background-color: #FF9494;
   margin: 6px 0px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -335,7 +344,7 @@ ul {
 }
 
 .mobileNav {
-  background-color: #DF8D6E;
+  background-color: #4E6D79;
   min-height: 50vh;
   border-radius: 8px;
   width: 100%;
@@ -369,7 +378,7 @@ ul {
 }
 
 header {
-  background-image: url(/assets/susan-wilkinson-K9scvXSS4z4-unsplash.jpg);
+  background-image: url(/assets/landingpage-top.png);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -378,9 +387,9 @@ header {
 
 span {
   display: block;
-  color: #DF8D6E;
+  color: #4E6D79;
   margin-top: 15px;
-  font-family: "Pacifico", cursive;
+  font-family: "Noto Serif", serif;
   font-size: 35px;
   font-size: 1.75rem;
 }
@@ -388,15 +397,13 @@ span {
 h1 {
   text-align: center;
   padding-top: 300px;
-  color: #10234D;
+  color: #4E6D79;
   font-size: 85px;
   font-size: 4.25rem;
 }
 
 .about {
-  background-color: #10234D;
   height: 300px;
-  color: #FBF7F6;
 }
 
 .about div {
@@ -421,7 +428,7 @@ h1 {
 }
 
 .skills h2 {
-  color: #DF8D6E;
+  color: #4E6D79;
 }
 
 .skillsList {
@@ -451,5 +458,15 @@ h1 {
 
 .fa-brands {
   font-size: 50px;
-  color: #10234D;
+  color: #4E6D79;
+}
+
+video {
+  width: 250px;
+  height: 250px;
+}
+
+.projectList a {
+  background-color: #4E6D79;
+  padding: 5px;
 }
