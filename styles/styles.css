@@ -253,6 +253,12 @@ p {
   color: #4E6D79;
 }
 
+h2,
+h3,
+a {
+  text-transform: uppercase;
+}
+
 h2 {
   font-size: 30px;
   font-size: 1.5rem;
@@ -273,7 +279,13 @@ a {
   color: #4E6D79;
 }
 
-.projectList a {
+p {
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+.projectList a,
+.contacts a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -404,8 +416,25 @@ h1 {
   font-size: 4.25rem;
 }
 
-.about {
+main {
   background-image: url(/assets/website-blue.png);
+  background-size: cover;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.projects {
+  background-image: url(/assets/website-yellow.png);
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url(/assets/landingpage-bottom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .about div {
@@ -431,6 +460,7 @@ h1 {
 
 .skills h2 {
   color: #4E6D79;
+  margin-top: 80px;
 }
 
 .skillsList {
@@ -458,7 +488,8 @@ h1 {
   margin: 20px 15px;
 }
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
   font-size: 50px;
   color: #4E6D79;
 }
@@ -468,7 +499,12 @@ video {
   height: 250px;
 }
 
-.projectList a {
+.projects h2 {
+  text-align: center;
+}
+
+.projectList a,
+.contacts a {
   background-color: #FF9494;
   padding: 5px;
   border-radius: 5px;
@@ -489,4 +525,26 @@ video {
 
 .projectList h4 {
   margin: 10px 0;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contacts p {
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
 }

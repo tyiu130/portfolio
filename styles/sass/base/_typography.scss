@@ -9,6 +9,12 @@ p {
     color: $primary;
 }
 
+h2,
+h3,
+a {
+    text-transform: uppercase;
+}
+
 
 h2 {
     @include fontSize(30)
@@ -27,9 +33,15 @@ a {
     color: $primary;
 }
 
+p {
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
 
 
-.projectList a {
+
+.projectList a,
+.contacts a {
     font-family: $secondaryFont;
     font-weight: 700;
     @include fontSize(18);

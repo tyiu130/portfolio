@@ -1,7 +1,26 @@
-// ABOUT ME
-.about {
+
+main {
     background-image: url(/assets/website-blue.png);
+    background-size: cover;
+    background-size: 60%;
+    background-repeat: no-repeat;   
 }
+
+.projects {
+    background-image: url(/assets/website-yellow.png);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url(/assets/landingpage-bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+// ABOUT ME
 
 .about div {
     text-align: center;
@@ -29,6 +48,7 @@
 
 .skills h2 {
     color: $primary;
+    margin-top: 80px;
 }
 
 .skillsList {
@@ -48,20 +68,25 @@
 }
 
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
     font-size: 50px;
     color: $primary;
 }
 
 // PROJECTS
 
-
 video {
     width: 250px;
     height: 250px;
 }
 
-.projectList a {
+.projects h2{
+    text-align: center;
+}
+
+.projectList a,
+.contacts a {
     background-color: $secondary;
     padding: 5px;
     border-radius: 5px;
@@ -83,4 +108,17 @@ video {
 
 .projectList h4 {
     margin: 10px 0;
+}
+
+// CONTACTS
+
+.contacts {
+    text-align: center;
+}
+.contacts ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacts p {
+    margin: 20px 0;
 }
