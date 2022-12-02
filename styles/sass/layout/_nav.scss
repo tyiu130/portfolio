@@ -6,7 +6,7 @@
     top: 30px;
     width: 40px;
     cursor: pointer;
-    background-color: transparent;
+    background-color: $secondary;
     border: none;
     border-radius: 45%;
     z-index: 30;
@@ -19,7 +19,7 @@
     display: block;
     width: 25px;
     height: 4px;
-    background-color: $secondary;
+    background-color: $tertiary;
     margin: 6px 0px;
     transition: 0.4s;
     border-radius: 30%;

@@ -31,5 +31,7 @@ a {
 
 .projectList a {
     font-family: $secondaryFont;
+    font-weight: 700;
     @include fontSize(18);
+    color: $tertiary;
 }
