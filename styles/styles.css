@@ -406,6 +406,7 @@ span {
   font-family: "Noto Serif", serif;
   font-size: 35px;
   font-size: 1.75rem;
+  text-align: center;
 }
 
 h1 {
@@ -416,6 +417,91 @@ h1 {
   font-size: 4.25rem;
 }
 
+.words {
+  border: 0px solid #fff;
+  height: 40px;
+  overflow: hidden;
+}
+
+.words span {
+  margin-top: 0;
+  padding: 2px 0;
+  -webkit-animation: rotate_words 10s ease-in-out infinite;
+          animation: rotate_words 10s ease-in-out infinite;
+  position: relative;
+}
+
+@-webkit-keyframes rotate_words {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -35px;
+  }
+  40% {
+    top: -35px;
+  }
+  45% {
+    top: -70px;
+  }
+  55% {
+    top: -70px;
+  }
+  60% {
+    top: -110px;
+  }
+  75% {
+    top: -110px;
+  }
+  80% {
+    top: -140px;
+  }
+  95% {
+    top: -140px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes rotate_words {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: -35px;
+  }
+  40% {
+    top: -35px;
+  }
+  45% {
+    top: -70px;
+  }
+  55% {
+    top: -70px;
+  }
+  60% {
+    top: -110px;
+  }
+  75% {
+    top: -110px;
+  }
+  80% {
+    top: -140px;
+  }
+  95% {
+    top: -140px;
+  }
+  100% {
+    top: 0;
+  }
+}
 main {
   background-image: url(/assets/website-blue.png);
   background-size: cover;
