@@ -15,9 +15,15 @@ a {
     text-transform: uppercase;
 }
 
+h3 {
+    margin: 10px 0;
+}
+
 
 h2 {
-    @include fontSize(30)
+    @include fontSize(30);
+    margin: 30px 0;
+    font-weight: 700;
 }
 
 h4 {
@@ -33,6 +39,7 @@ a {
     color: $primary;
 }
 
+
 p {
     line-height: 1.5;
     letter-spacing: 1.2px;
@@ -46,4 +53,8 @@ p {
     font-weight: 700;
     @include fontSize(18);
     color: $tertiary;
+
+    @include devices(tablet) {
+        @include fontSize(20);
+    }
 }

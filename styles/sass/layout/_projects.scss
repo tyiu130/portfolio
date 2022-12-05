@@ -1,0 +1,49 @@
+// PROJECTS
+
+video {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.projectList a,
+.contacts a {
+    background-color: $secondary;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+
+    @include devices (tablet) {
+        padding: 10px 15px;
+    }
+
+}
+
+.projectList a:hover,
+.contacts a:hover {
+    background-color: $tertiary;
+    color: $secondary;
+    border: 2px pink solid;
+}
+
+
+.projectList ul {
+    text-align: center;
+}
+
+.projectList li {
+    margin: 50px 0;
+}
+
+.projectList p {
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.projectList h4 {
+    margin: 10px 0;
+}

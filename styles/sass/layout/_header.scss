@@ -1,17 +1,4 @@
 
-
-header {
-    background-image: url(/assets/landingpage-top.png);
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    
-    
-}
-
-
-
 span {
     display: block;
     color: $primary;
@@ -23,9 +10,13 @@ span {
 
 h1 {
     text-align: center;
-    padding-top: 300px;
+    padding-top: 230px;
     color: $primary;
     @include fontSize(85);
+
+    @include devices(tablet) {
+        padding-top: 330px;
+    }
     
 }
 
@@ -87,10 +78,10 @@ h1 {
         top: -35px;
     }
     45% {
-        top: -70px;
+        top: -72px;
     }
     55% {
-        top: -70px;
+        top: -72px;
     }
     60% {
         top: -110px;
@@ -99,10 +90,10 @@ h1 {
         top: -110px;
     }
     80%{
-        top: -140px;
+        top: -144px;
     }
     95% {
-        top:-140px;
+        top:-144px;
     }
 
     100% {

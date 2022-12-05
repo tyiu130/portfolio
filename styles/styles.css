@@ -259,9 +259,15 @@ a {
   text-transform: uppercase;
 }
 
+h3 {
+  margin: 10px 0;
+}
+
 h2 {
   font-size: 30px;
   font-size: 1.5rem;
+  margin: 30px 0;
+  font-weight: 700;
 }
 
 h4 {
@@ -292,6 +298,13 @@ p {
   font-size: 0.9rem;
   color: #fff;
 }
+@media (min-width: 481px) {
+  .projectList a,
+.contacts a {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+}
 
 .wrapper {
   max-width: 1280px;
@@ -311,6 +324,35 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+header {
+  background-image: url(/assets/landingpage-top.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main {
+  background-image: url(/assets/website-blue.png);
+  background-size: cover;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.projects {
+  background-image: url(/assets/website-yellow.png);
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url(/assets/landingpage-bottom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .hamburger {
@@ -358,7 +400,7 @@ ul {
 }
 
 .mobileNav {
-  background-color: #4E6D79;
+  background-color: #FF9494;
   min-height: 50vh;
   border-radius: 8px;
   width: 100%;
@@ -391,12 +433,12 @@ ul {
   margin: 60px;
 }
 
-header {
-  background-image: url(/assets/landingpage-top.png);
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+.mobileNav a {
+  color: #fff;
+}
+
+.regularNav {
+  display: none;
 }
 
 span {
@@ -411,10 +453,15 @@ span {
 
 h1 {
   text-align: center;
-  padding-top: 300px;
+  padding-top: 230px;
   color: #4E6D79;
   font-size: 85px;
   font-size: 4.25rem;
+}
+@media (min-width: 481px) {
+  h1 {
+    padding-top: 330px;
+  }
 }
 
 .words {
@@ -445,10 +492,10 @@ h1 {
     top: -35px;
   }
   45% {
-    top: -70px;
+    top: -72px;
   }
   55% {
-    top: -70px;
+    top: -72px;
   }
   60% {
     top: -110px;
@@ -457,10 +504,10 @@ h1 {
     top: -110px;
   }
   80% {
-    top: -140px;
+    top: -144px;
   }
   95% {
-    top: -140px;
+    top: -144px;
   }
   100% {
     top: 0;
@@ -481,10 +528,10 @@ h1 {
     top: -35px;
   }
   45% {
-    top: -70px;
+    top: -72px;
   }
   55% {
-    top: -70px;
+    top: -72px;
   }
   60% {
     top: -110px;
@@ -493,36 +540,15 @@ h1 {
     top: -110px;
   }
   80% {
-    top: -140px;
+    top: -144px;
   }
   95% {
-    top: -140px;
+    top: -144px;
   }
   100% {
     top: 0;
   }
 }
-main {
-  background-image: url(/assets/website-blue.png);
-  background-size: cover;
-  background-size: 60%;
-  background-repeat: no-repeat;
-}
-
-.projects {
-  background-image: url(/assets/website-yellow.png);
-  background-size: cover;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-body {
-  background-image: url(/assets/landingpage-bottom.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
 .about div {
   text-align: center;
   padding-top: 60px;
@@ -533,10 +559,15 @@ body {
 }
 
 .profileImg {
-  width: 65px;
-  height: 65px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
-  margin-bottom: 10px;
+}
+@media (min-width: 481px) {
+  .profileImg {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .skills {
@@ -546,7 +577,6 @@ body {
 
 .skills h2 {
   color: #4E6D79;
-  margin-top: 80px;
 }
 
 .skillsList {
@@ -569,6 +599,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 481px) {
+  .skillsList ul {
+    width: 100%;
+  }
+}
 
 .skillsList li {
   margin: 20px 15px;
@@ -576,13 +611,23 @@ body {
 
 .fa-brands,
 .fa-solid {
-  font-size: 50px;
+  font-size: 65px;
+  font-size: 3.25rem;
   color: #4E6D79;
+  margin: 10px 0;
+}
+@media (min-width: 481px) {
+  .fa-brands,
+.fa-solid {
+    font-size: 80px;
+    font-size: 4rem;
+  }
 }
 
 video {
   width: 250px;
   height: 250px;
+  border-radius: 30px;
 }
 
 .projects h2 {
@@ -594,6 +639,20 @@ video {
   background-color: #FF9494;
   padding: 5px;
   border-radius: 5px;
+  margin: 0 5px;
+}
+@media (min-width: 481px) {
+  .projectList a,
+.contacts a {
+    padding: 10px 15px;
+  }
+}
+
+.projectList a:hover,
+.contacts a:hover {
+  background-color: #fff;
+  color: #FF9494;
+  border: 2px pink solid;
 }
 
 .projectList ul {

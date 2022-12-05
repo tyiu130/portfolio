@@ -1,0 +1,42 @@
+
+
+// ABOUT ME
+
+// .reveal {
+//     position: relative;
+//     transform: translateY(150px);
+//     opacity: 0;
+//     transition: 2s all ease;
+// }
+
+// .active {
+//     transform: translateY(0);
+//     opacity: 1;
+// }
+
+.about div {
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.about p {
+    padding: 0 10px;
+}
+
+.profileImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+
+    @include devices(tablet) {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+
+
+
+

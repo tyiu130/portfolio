@@ -1,0 +1,42 @@
+// SKILLS
+
+.skills {
+    text-align: center;
+    position: relative;
+}
+
+.skills h2 {
+    color: $primary;
+}
+
+.skillsList {
+    display: flex;
+    justify-content: center;
+}
+
+.skillsList ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100%/1.5));
+    justify-content: center;
+
+    @include devices(tablet) {
+        width: 100%;
+    }
+}
+
+.skillsList li {
+    margin: 20px 15px;
+}
+
+
+.fa-brands,
+.fa-solid {
+    @include fontSize(65);
+    color: $primary;
+    margin: 10px 0;
+
+    @include devices(tablet) {
+        @include fontSize(80);
+    }
+}

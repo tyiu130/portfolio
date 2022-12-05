@@ -1,0 +1,29 @@
+header {
+    background-image: url(/assets/landingpage-top.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+main {
+    background-image: url(/assets/website-blue.png);
+    background-size: cover;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.projects {
+    background-image: url(/assets/website-yellow.png);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url(/assets/landingpage-bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}

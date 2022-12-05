@@ -10,6 +10,7 @@
     border: none;
     border-radius: 45%;
     z-index: 30;
+
 }
 
 .hamburger .bar,
@@ -42,7 +43,7 @@
 }
 
 .mobileNav {
-    background-color: $primary;
+    background-color: $secondary;
     min-height: 50vh;
     border-radius: 8px;
     width: 100%;
@@ -55,6 +56,8 @@
     flex-direction: column;
     z-index: 20;
     transition: 0.4s;
+
+    
 }
 
 .navOpen {
@@ -64,4 +67,24 @@
 
 .mobileNav a:nth-child(2) {
     margin: 60px ;
+}
+
+.mobileNav a {
+    color: $tertiary;
+}
+
+.regularNav {
+    visibility: hidden;
+
+    @include devices(laptop){
+        visibility: visible;
+    }
+}
+
+@include devices(laptop, desktop) {
+    .hamburger,
+    .mobileNav {
+        visibility: hidden;
+    }
+
 }
