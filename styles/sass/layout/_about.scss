@@ -16,12 +16,14 @@
 
 .about div {
     text-align: center;
-    padding-top: 60px;
-
 }
 
 .about p {
     padding: 0 10px;
+
+    @include devices(laptop) {
+        @include fontSize(30)
+    }
 }
 
 .profileImg {
@@ -33,9 +35,16 @@
         width: 250px;
         height: 250px;
     }
+
 }
 
+@include devices(laptop){
+    .text-container {
+        padding: 0 10%;
+    }
+ 
 
+}
 
 
 

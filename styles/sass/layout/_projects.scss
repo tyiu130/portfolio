@@ -4,6 +4,11 @@ video {
     width: 250px;
     height: 250px;
     border-radius: 30px;
+
+    @include devices(laptop){
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .projects h2 {
@@ -33,10 +38,20 @@ video {
 
 .projectList ul {
     text-align: center;
+
+    @include devices (laptop) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
 }
 
 .projectList li {
     margin: 50px 0;
+
+    @include devices (laptop) {
+        width: calc((100%/2) - 20px);
+    }
 }
 
 .projectList p {

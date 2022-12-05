@@ -3,10 +3,16 @@
 .skills {
     text-align: center;
     position: relative;
+
 }
 
 .skills h2 {
     color: $primary;
+
+    @include devices(laptop){
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
 }
 
 .skillsList {
@@ -38,5 +44,9 @@
 
     @include devices(tablet) {
         @include fontSize(80);
+    }
+
+    @include devices(laptop) {
+        @include fontSize(100);
     }
 }

@@ -12,13 +12,24 @@ main {
     background-size: cover;
     background-size: 60%;
     background-repeat: no-repeat;
+
+    @include devices(laptop){
+        background-size: 32%;
+    }
 }
 
 .projects {
     background-image: url(/assets/website-yellow.png);
     background-size: cover;
-    background-size: 100%;
+    background-size: 85%;
     background-repeat: no-repeat;
+    background-position-x: right;
+
+    @include devices(laptop){
+        background-size: 40%;
+        // background-position-x: right;
+        
+    }
 }
 
 body {

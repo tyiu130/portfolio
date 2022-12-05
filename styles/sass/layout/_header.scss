@@ -6,6 +6,10 @@ span {
     font-family: $baseFont;
     @include fontSize(35);
     text-align: center;
+
+    @include devices(laptop) {
+        @include fontSize(45)
+    }
 }
 
 h1 {
@@ -17,13 +21,21 @@ h1 {
     @include devices(tablet) {
         padding-top: 330px;
     }
+
+    @include devices(laptop) {
+        @include fontSize(120)
+    }
     
 }
 
 .words {
     border: 0px solid #fff;
-    height: 40px;
+    height: 35px;
     overflow: hidden;
+
+    @include devices(laptop) {
+        height: 44px;
+    }
 }
 
 .words span {
@@ -78,10 +90,10 @@ h1 {
         top: -35px;
     }
     45% {
-        top: -72px;
+        top: -75px;
     }
     55% {
-        top: -72px;
+        top: -75px;
     }
     60% {
         top: -110px;
@@ -101,4 +113,45 @@ h1 {
 
     }
     
+}
+
+@include devices(laptop) {
+    @keyframes rotate_words{
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    25% {
+        top: -50px;
+    }
+    40% {
+        top: -50px;
+    }
+    45% {
+        top: -92px;
+    }
+    55% {
+        top: -92px;
+    }
+    60% {
+        top: -136px;
+    }
+    75% {
+        top: -136px;
+    }
+    80%{
+        top: -190px;
+    }
+    95% {
+        top:-190px;
+    }
+
+    100% {
+        top: 0;
+
+    }
+    
+}
 }

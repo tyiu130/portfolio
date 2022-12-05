@@ -74,17 +74,30 @@
 }
 
 .regularNav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 70px;
     visibility: hidden;
 
     @include devices(laptop){
         visibility: visible;
     }
+
+    @include devices(desktop){
+        visibility: visible;
+    }
 }
 
-@include devices(laptop, desktop) {
-    .hamburger,
-    .mobileNav {
+
+.hamburger,
+.mobileNav {
+
+    @include devices(laptop){
         visibility: hidden;
     }
 
+    @include devices(desktop){
+        visibility: hidden;
+    }
 }

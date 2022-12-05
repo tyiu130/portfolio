@@ -269,6 +269,12 @@ h2 {
   margin: 30px 0;
   font-weight: 700;
 }
+@media (min-width: 769px) {
+  h2 {
+    font-size: 40px;
+    font-size: 2rem;
+  }
+}
 
 h4 {
   font-family: "Roboto", sans-serif;
@@ -277,12 +283,19 @@ h4 {
   font-size: 18px;
   font-size: 0.9rem;
 }
+@media (min-width: 769px) {
+  h4 {
+    font-size: 25px;
+    font-size: 1.25rem;
+  }
+}
 
 a {
-  font-size: 35px;
-  font-size: 1.75rem;
+  font-size: 30px;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #4E6D79;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -340,12 +353,23 @@ main {
   background-size: 60%;
   background-repeat: no-repeat;
 }
+@media (min-width: 769px) {
+  main {
+    background-size: 32%;
+  }
+}
 
 .projects {
   background-image: url(/assets/website-yellow.png);
   background-size: cover;
-  background-size: 100%;
+  background-size: 85%;
   background-repeat: no-repeat;
+  background-position-x: right;
+}
+@media (min-width: 769px) {
+  .projects {
+    background-size: 40%;
+  }
 }
 
 body {
@@ -438,7 +462,40 @@ body {
 }
 
 .regularNav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 70px;
+  visibility: hidden;
+}
+@media (min-width: 769px) {
+  .regularNav {
+    visibility: visible;
+  }
+}
+@media (min-width: 1025px) {
+  .regularNav {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger,
+.mobileNav {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1025px) {
+  .hamburger,
+.mobileNav {
+    visibility: hidden;
+  }
 }
 
 span {
@@ -449,6 +506,12 @@ span {
   font-size: 35px;
   font-size: 1.75rem;
   text-align: center;
+}
+@media (min-width: 769px) {
+  span {
+    font-size: 45px;
+    font-size: 2.25rem;
+  }
 }
 
 h1 {
@@ -463,11 +526,22 @@ h1 {
     padding-top: 330px;
   }
 }
+@media (min-width: 769px) {
+  h1 {
+    font-size: 120px;
+    font-size: 6rem;
+  }
+}
 
 .words {
   border: 0px solid #fff;
-  height: 40px;
+  height: 35px;
   overflow: hidden;
+}
+@media (min-width: 769px) {
+  .words {
+    height: 44px;
+  }
 }
 
 .words span {
@@ -492,10 +566,10 @@ h1 {
     top: -35px;
   }
   45% {
-    top: -72px;
+    top: -75px;
   }
   55% {
-    top: -72px;
+    top: -75px;
   }
   60% {
     top: -110px;
@@ -528,10 +602,10 @@ h1 {
     top: -35px;
   }
   45% {
-    top: -72px;
+    top: -75px;
   }
   55% {
-    top: -72px;
+    top: -75px;
   }
   60% {
     top: -110px;
@@ -549,13 +623,90 @@ h1 {
     top: 0;
   }
 }
+@media (min-width: 769px) {
+  @-webkit-keyframes rotate_words {
+    0% {
+      top: 0;
+    }
+    20% {
+      top: 0;
+    }
+    25% {
+      top: -50px;
+    }
+    40% {
+      top: -50px;
+    }
+    45% {
+      top: -92px;
+    }
+    55% {
+      top: -92px;
+    }
+    60% {
+      top: -136px;
+    }
+    75% {
+      top: -136px;
+    }
+    80% {
+      top: -190px;
+    }
+    95% {
+      top: -190px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes rotate_words {
+    0% {
+      top: 0;
+    }
+    20% {
+      top: 0;
+    }
+    25% {
+      top: -50px;
+    }
+    40% {
+      top: -50px;
+    }
+    45% {
+      top: -92px;
+    }
+    55% {
+      top: -92px;
+    }
+    60% {
+      top: -136px;
+    }
+    75% {
+      top: -136px;
+    }
+    80% {
+      top: -190px;
+    }
+    95% {
+      top: -190px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
 .about div {
   text-align: center;
-  padding-top: 60px;
 }
 
 .about p {
   padding: 0 10px;
+}
+@media (min-width: 769px) {
+  .about p {
+    font-size: 30px;
+    font-size: 1.5rem;
+  }
 }
 
 .profileImg {
@@ -570,6 +721,11 @@ h1 {
   }
 }
 
+@media (min-width: 769px) {
+  .text-container {
+    padding: 0 10%;
+  }
+}
 .skills {
   text-align: center;
   position: relative;
@@ -577,6 +733,12 @@ h1 {
 
 .skills h2 {
   color: #4E6D79;
+}
+@media (min-width: 769px) {
+  .skills h2 {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
 }
 
 .skillsList {
@@ -623,11 +785,24 @@ h1 {
     font-size: 4rem;
   }
 }
+@media (min-width: 769px) {
+  .fa-brands,
+.fa-solid {
+    font-size: 100px;
+    font-size: 5rem;
+  }
+}
 
 video {
   width: 250px;
   height: 250px;
   border-radius: 30px;
+}
+@media (min-width: 769px) {
+  video {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .projects h2 {
@@ -658,9 +833,23 @@ video {
 .projectList ul {
   text-align: center;
 }
+@media (min-width: 769px) {
+  .projectList ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .projectList li {
   margin: 50px 0;
+}
+@media (min-width: 769px) {
+  .projectList li {
+    width: calc(50% - 20px);
+  }
 }
 
 .projectList p {
