@@ -266,13 +266,23 @@ h3 {
 h2 {
   font-size: 30px;
   font-size: 1.5rem;
-  margin: 30px 0;
+  margin: 40px 0;
   font-weight: 700;
 }
 @media (min-width: 769px) {
   h2 {
     font-size: 40px;
     font-size: 2rem;
+  }
+}
+
+h3 {
+  font-weight: 700;
+}
+@media (min-width: 769px) {
+  h3 {
+    font-size: 32px;
+    font-size: 1.6rem;
   }
 }
 
@@ -302,6 +312,18 @@ p {
   line-height: 1.5;
   letter-spacing: 1.2px;
 }
+@media (min-width: 1025px) {
+  p {
+    font-size: 23px;
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 26px;
+    font-size: 1.3rem;
+  }
+}
 
 .projectList a,
 .contacts a {
@@ -316,6 +338,20 @@ p {
 .contacts a {
     font-size: 20px;
     font-size: 1rem;
+  }
+}
+@media (min-width: 769px) {
+  .projectList a,
+.contacts a {
+    font-size: 22px;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1025px) {
+  .projectList a,
+.contacts a {
+    font-size: 25px;
+    font-size: 1.25rem;
   }
 }
 
@@ -339,14 +375,101 @@ ul {
   padding-left: 0;
 }
 
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 header {
-  background-image: url(/assets/landingpage-top.png);
+  background-image: url(/assets/layered-waves-haikei.svg);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
+.wave {
+  background-image: url(/assets/wave.png);
+  min-height: 250px;
+  width: 100%;
+  background-size: 1000px 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 40%;
+  -webkit-animation: animate 20s infinite;
+          animation: animate 20s infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+.wave1 {
+  background-image: url(/assets/wave.png);
+  min-height: 230px;
+  width: 100%;
+  background-size: 1000px 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 30%;
+  -webkit-animation: animate1 20s infinite;
+          animation: animate1 20s infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
 main {
   background-image: url(/assets/website-blue.png);
   background-size: cover;
@@ -389,7 +512,7 @@ body {
   background-color: #FF9494;
   border: none;
   border-radius: 45%;
-  z-index: 30;
+  z-index: 100;
 }
 
 .hamburger .bar,
@@ -444,7 +567,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 20;
+  z-index: 50;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -473,6 +596,8 @@ body {
           justify-content: space-evenly;
   padding-top: 70px;
   visibility: hidden;
+  position: relative;
+  z-index: 50;
 }
 @media (min-width: 769px) {
   .regularNav {
@@ -516,7 +641,7 @@ span {
 
 h1 {
   text-align: center;
-  padding-top: 230px;
+  padding-top: 180px;
   color: #4E6D79;
   font-size: 85px;
   font-size: 4.25rem;
@@ -695,6 +820,10 @@ h1 {
     }
   }
 }
+.headerSpan {
+  margin: 15px 0;
+}
+
 .about div {
   text-align: center;
 }
@@ -729,6 +858,7 @@ h1 {
 .skills {
   text-align: center;
   position: relative;
+  margin: 150px 0;
 }
 
 .skills h2 {
@@ -764,6 +894,13 @@ h1 {
 @media (min-width: 481px) {
   .skillsList ul {
     width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .skillsList ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -804,6 +941,18 @@ video {
     height: 250px;
   }
 }
+@media (min-width: 1025px) {
+  video {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  video {
+    width: 530px;
+    height: 530px;
+  }
+}
 
 .projects h2 {
   text-align: center;
@@ -838,17 +987,46 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (min-width: 1025px) {
+  .projectList ul {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-.projectList li {
+.projectItems {
   margin: 50px 0;
 }
 @media (min-width: 769px) {
-  .projectList li {
+  .projectItems {
     width: calc(50% - 20px);
+  }
+}
+@media (min-width: 1025px) {
+  .projectItems {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .projectItems:nth-child(2),
+.projectItems:last-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 
@@ -859,6 +1037,17 @@ video {
 
 .projectList h4 {
   margin: 10px 0;
+}
+
+@media (min-width: 1025px) {
+  .listContainer {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .listContainer {
+    margin-top: 150px;
+  }
 }
 
 .contacts {
@@ -875,7 +1064,7 @@ video {
 }
 
 .contacts p {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 footer {

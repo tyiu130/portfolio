@@ -14,7 +14,7 @@ span {
 
 h1 {
     text-align: center;
-    padding-top: 230px;
+    padding-top: 180px;
     color: $primary;
     @include fontSize(85);
 
@@ -154,4 +154,8 @@ h1 {
     }
     
 }
+}
+
+.headerSpan {
+    margin: 15px 0;
 }

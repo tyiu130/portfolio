@@ -22,6 +22,12 @@
             @content;
         }
     }
+    @if $breakpoint ==largeDesktop {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    
 }
 
 // for making font sizes responsive

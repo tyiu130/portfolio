@@ -3,6 +3,7 @@
 .skills {
     text-align: center;
     position: relative;
+    margin: 150px 0;
 
 }
 
@@ -28,6 +29,10 @@
 
     @include devices(tablet) {
         width: 100%;
+    }
+
+    @include devices(laptop) {
+        justify-content: space-evenly;
     }
 }
 

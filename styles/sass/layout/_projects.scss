@@ -9,6 +9,16 @@ video {
         width: 250px;
         height: 250px;
     }
+
+    @include devices (desktop) {
+        width: 450px;
+        height: 450px;
+    }
+
+    @include devices (largeDesktop) {
+        width: 530px;
+        height: 530px;
+    }
 }
 
 .projects h2 {
@@ -41,17 +51,37 @@ video {
 
     @include devices (laptop) {
         display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include devices (desktop) {
         flex-wrap: nowrap;
+        flex-direction: column;
     }
 
 }
 
-.projectList li {
+.projectItems {
     margin: 50px 0;
 
     @include devices (laptop) {
         width: calc((100%/2) - 20px);
     }
+
+    @include devices (desktop) {
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+}
+
+.projectItems:nth-child(2),
+.projectItems:last-child {
+
+    @include devices (desktop) {
+        flex-direction: row-reverse;
+    }
+
 }
 
 .projectList p {
@@ -61,4 +91,15 @@ video {
 
 .projectList h4 {
     margin: 10px 0;
+}
+
+
+.listContainer {
+    @include devices (desktop) {
+        margin-top: 100px;
+    }
+
+    @include devices (largeDesktop) {
+        margin-top: 150px;
+    }
 }

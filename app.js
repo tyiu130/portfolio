@@ -15,12 +15,14 @@ portfolio.setUpEventListeners = function() {
     })
 
     // //REVEAL ANIMATION
-    // const reveal = document.querySelector('.reveal');
-    // const active = document.querySelector('.active');
+    // const slide = document.querySelector('.slide');
+    // const appear = document.querySelector('.slideAppear');
     
-    // reveal.addEventListener('scroll', function() {
-    //     reveal.classList.add('active');
+    // slide.addEventListener('scroll', function() {
+    //     slide.classList.add('appear');
     // })
+
+
     
     
 }

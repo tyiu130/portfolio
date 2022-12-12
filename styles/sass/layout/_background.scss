@@ -1,11 +1,61 @@
 header {
-    background-image: url(/assets/landingpage-top.png);
+    background-image: url(/assets/layered-waves-haikei.svg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
 }
+
+
+.wave {
+    background-image: url(/assets/wave.png);
+    min-height: 250px;
+    width: 100%;
+    background-size: 1000px 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 40%;
+    animation: animate 20s  infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.wave1 {
+    background-image: url(/assets/wave.png);
+    // transform: rotateY(180deg);
+    min-height: 230px;
+    width: 100%;
+    background-size: 1000px 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 30%;
+    animation: animate1 20s infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+
+
 
 main {
     background-image: url(/assets/website-blue.png);
