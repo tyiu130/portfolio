@@ -14,8 +14,14 @@ span {
 
 h1 {
     text-align: center;
-    padding-top: 180px;
-    color: $primary;
+    padding-top: 280px;
+    font-weight: 700;
+    color: $tertiary;
+    -webkit-text-stroke: 0.1vw $primary;
+    text-shadow: -5px -5px 0px $primary,
+                -8px -8px 0px #C3D6F5,
+                -11px -11px 0px #E4DEFC,
+                -14px -14px 0px #FFE7FD;;
     @include fontSize(85);
 
     @include devices(tablet) {
@@ -23,10 +29,31 @@ h1 {
     }
 
     @include devices(laptop) {
-        @include fontSize(120)
+        @include fontSize(130);
+        padding-top: 380px;
     }
     
 }
+
+
+
+// .textWave {
+//     padding: 0;
+//     margin: 0;
+//     transform: translate(0, -100%);
+//     color: $primary;
+//     animation: textWave 10s ease-in-out infinite;
+// }
+
+// @keyframes textWave {
+//     0%,100% {
+//         clip-path: polygon(0 26%, 16% 24%, 29% 29%, 45% 42%, 61% 55%, 76% 57%, 85% 55%, 100% 45%, 100% 100%, 0% 100%);
+//     }
+
+//     50% {
+//         clip-path: polygon(0 42%, 14% 55%, 28% 59%, 47% 58%, 63% 49%, 69% 28%, 84% 19%, 100% 22%, 100% 100%, 0% 100%);
+//     }
+// }
 
 .words {
     border: 0px solid #fff;
@@ -45,35 +72,6 @@ h1 {
     position: relative;
     
 }
-
-// @keyframes rotate_words {
- 
-//     10% {
-//         transform: translateY(-112%);
-//     }
-//     25% {
-//         transform: translateY(-100%);
-//     }
-//     35% {
-//         transform: translateY(-212%);
-//     }
-//     50% {
-//         transform: translateY(-200%);
-//     }
-//     60% {
-//         transform: translateY(-312%);
-//     }
-//     75% {
-//         transform: translateY(-300%);
-//     }
-//     85% {
-//         transform: translateY(-412%);
-//     }
-//     100% {
-//         transform: translateY(-400%);
-//     }
-
-// }
 
 
 @keyframes rotate_words{
@@ -156,6 +154,6 @@ h1 {
 }
 }
 
-.headerSpan {
-    margin: 15px 0;
-}
+// .headerSpan {
+//     margin: 15px 0;
+// }

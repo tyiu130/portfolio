@@ -20,15 +20,9 @@ portfolio.setUpEventListeners = function() {
     
     // slide.addEventListener('scroll', function() {
     //     slide.classList.add('appear');
-    // })
+    // }) 
 
-
-    
-    
 }
-
-
-
 
 
 portfolio.init();

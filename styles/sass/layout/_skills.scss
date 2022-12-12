@@ -8,8 +8,6 @@
 }
 
 .skills h2 {
-    color: $primary;
-
     @include devices(laptop){
         margin-top: 80px;
         margin-bottom: 0;
