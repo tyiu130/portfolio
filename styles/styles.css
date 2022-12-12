@@ -250,7 +250,7 @@ p {
   font-family: "Noto Serif", serif;
   margin: 0;
   font-weight: 400;
-  color: #4E6D79;
+  color: #819CC7;
 }
 
 h2,
@@ -269,8 +269,8 @@ h2 {
   margin: 40px 0;
   font-weight: 700;
   color: #fff;
-  -webkit-text-stroke: 0.1vw #4E6D79;
-  text-shadow: -4px -4px 0px #C3D6F5, -6px -6px 0px #E4DEFC, -8px -8px 0px #FFE7FD;
+  -webkit-text-stroke: 0.1vw #819CC7;
+  text-shadow: -2px -2px 0px #C3D6F5, -4px -4px 0px #FFE7FD;
 }
 @media (min-width: 769px) {
   h2 {
@@ -474,34 +474,43 @@ header {
     background-position-x: -1000px;
   }
 }
-main {
-  background-image: url(/assets/website-blue.png);
+.pinkWaves {
+  background-image: url(/assets/main-pink-waves.svg);
   background-size: cover;
-  background-size: 60%;
+  width: 100%;
+  min-height: 600px;
   background-repeat: no-repeat;
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  z-index: 0;
 }
-@media (min-width: 769px) {
-  main {
-    background-size: 32%;
+@media (min-width: 481px) {
+  .pinkWaves {
+    bottom: 120px;
   }
 }
-
-.projects {
-  background-image: url(/assets/website-yellow.png);
-  background-size: cover;
-  background-size: 85%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-}
 @media (min-width: 769px) {
-  .projects {
-    background-size: 40%;
+  .pinkWaves {
+    bottom: 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .pinkWaves {
+    min-height: 1000px;
+    bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .pinkWaves {
+    min-height: 1200px;
+    bottom: -10px;
   }
 }
 
 body {
-  background-image: url(/assets/landingpage-bottom.png);
-  background-size: contain;
+  background-image: url(/assets/bottom-wave.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -629,7 +638,7 @@ body {
 
 span {
   display: block;
-  color: #4E6D79;
+  color: #819CC7;
   margin-top: 15px;
   font-family: "Noto Serif", serif;
   font-size: 35px;
@@ -645,11 +654,11 @@ span {
 
 h1 {
   text-align: center;
-  padding-top: 280px;
+  padding-top: 220px;
   font-weight: 700;
   color: #fff;
-  -webkit-text-stroke: 0.1vw #4E6D79;
-  text-shadow: -5px -5px 0px #4E6D79, -8px -8px 0px #C3D6F5, -11px -11px 0px #E4DEFC, -14px -14px 0px #FFE7FD;
+  -webkit-text-stroke: 0.1vw #819CC7;
+  text-shadow: -5px -5px 0px #819CC7, -8px -8px 0px #C3D6F5, -11px -11px 0px #E4DEFC, -14px -14px 0px #FFE7FD;
   font-size: 85px;
   font-size: 4.25rem;
 }
@@ -862,12 +871,21 @@ h1 {
 .skills {
   text-align: center;
   position: relative;
-  margin: 150px 0;
+  padding: 200px 0;
+  z-index: 50;
+}
+@media (min-width: 1025px) {
+  .skills {
+    padding: 400px 0;
+  }
 }
 
+.skills h2 {
+  position: relative;
+  z-index: 50;
+}
 @media (min-width: 769px) {
   .skills h2 {
-    margin-top: 80px;
     margin-bottom: 0;
   }
 }
@@ -879,6 +897,8 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  z-index: 50;
 }
 
 .skillsList ul {
@@ -913,7 +933,7 @@ h1 {
 .fa-solid {
   font-size: 65px;
   font-size: 3.25rem;
-  color: #4E6D79;
+  color: #819CC7;
   margin: 10px 0;
 }
 @media (min-width: 481px) {
@@ -928,6 +948,14 @@ h1 {
 .fa-solid {
     font-size: 100px;
     font-size: 5rem;
+  }
+}
+@media (min-width: 1025px) {
+  .fa-brands,
+.fa-solid {
+    margin-top: 85px;
+    font-size: 150px;
+    font-size: 7.5rem;
   }
 }
 
@@ -1049,6 +1077,11 @@ video {
   .listContainer {
     margin-top: 150px;
   }
+}
+
+.projects {
+  position: relative;
+  z-index: 50;
 }
 
 .contacts {

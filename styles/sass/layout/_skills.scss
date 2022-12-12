@@ -3,20 +3,29 @@
 .skills {
     text-align: center;
     position: relative;
-    margin: 150px 0;
+    padding: 200px 0;
+    z-index: 50;
+
+     @include devices(desktop) {
+        padding: 400px 0;
+    }
 
 }
 
 .skills h2 {
+    position: relative;
+    z-index: 50;
     @include devices(laptop){
-        margin-top: 80px;
         margin-bottom: 0;
+        
     }
 }
 
 .skillsList {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 50;
 }
 
 .skillsList ul {
@@ -51,5 +60,10 @@
 
     @include devices(laptop) {
         @include fontSize(100);
+    }
+
+    @include devices(desktop) {
+        margin-top: 85px;
+        @include fontSize(150);
     }
 }

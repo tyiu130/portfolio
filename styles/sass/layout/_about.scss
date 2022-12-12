@@ -14,12 +14,16 @@
 //     opacity: 1;
 // }
 
+
 .about div {
     text-align: center;
+    
+    
 }
 
 .about p {
     padding: 0 10px;
+ 
 
     @include devices(laptop) {
         @include fontSize(30)

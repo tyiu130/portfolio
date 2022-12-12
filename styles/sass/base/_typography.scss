@@ -26,9 +26,9 @@ h2 {
     font-weight: 700;
     color: $tertiary;
     -webkit-text-stroke: 0.1vw $primary;
-    text-shadow: -4px -4px 0px #C3D6F5,
-                -6px -6px 0px #E4DEFC,
-                -8px -8px 0px #FFE7FD;
+    text-shadow: -2px -2px 0px #C3D6F5,
+                -4px -4px 0px #FFE7FD,
+                ;
 
     @include devices(laptop){
         @include fontSize(50);

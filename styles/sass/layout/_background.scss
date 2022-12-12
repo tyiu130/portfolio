@@ -54,34 +54,68 @@ header {
     }
 }
 
-main {
-    background-image: url(/assets/website-blue.png);
-    background-size: cover;
-    background-size: 60%;
-    background-repeat: no-repeat;
+// main {
+//     background-image: url(/assets/website-blue.png);
+//     background-size: cover;
+//     background-size: 60%;
+//     background-repeat: no-repeat;
 
-    @include devices(laptop){
-        background-size: 32%;
-    }
-}
+//     @include devices(laptop){
+//         background-size: 32%;
+//     }
+// }
 
-.projects {
-    background-image: url(/assets/website-yellow.png);
-    background-size: cover;
-    background-size: 85%;
-    background-repeat: no-repeat;
-    background-position-x: right;
+// .projects {
+//     background-image: url(/assets/website-yellow.png);
+//     background-size: cover;
+//     background-size: 85%;
+//     background-repeat: no-repeat;
+//     background-position-x: right;
 
-    @include devices(laptop){
-        background-size: 40%;
-        // background-position-x: right;
+//     @include devices(laptop){
+//         background-size: 40%;
+//         // background-position-x: right;
         
+//     }
+// }
+
+
+.pinkWaves {
+    background-image: url(/assets/main-pink-waves.svg);
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    z-index: 0;
+
+    @include devices(tablet) {
+        bottom: 120px;
     }
+
+    @include devices(laptop) {
+        bottom: 50px;
+    }
+
+    @include devices(desktop) {
+        min-height: 1000px;
+        bottom: 80px;
+    }
+
+    @include devices(largeDesktop) {
+        min-height: 1200px;
+        bottom: -10px;
+    }
+
+
 }
 
 body {
-    background-image: url(/assets/landingpage-bottom.png);
-    background-size: contain;
+    background-image: url(/assets/bottom-wave.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
+    
 }
