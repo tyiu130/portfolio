@@ -22,11 +22,11 @@ portfolio.setUpEventListeners = function() {
    })
 
 
-// Fade-In Code by Kevin Powell
+//Citations: "Fade and scroll items in view while scrolling" by Kevin Powell, Dec 12 2022
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
     threshold: 1,
-    rootMargin: "0px 0px -100px 0px"
+    // rootMargin: "0px 0px -100px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
