@@ -10,15 +10,22 @@ header {
 
 .wave {
     background-image: url(/assets/wave.png);
-    min-height: 250px;
+    min-height: 180px;
     width: 100%;
-    background-size: 1000px 250px;
+    background-size: 1000px 180px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 40%;
+    opacity: 28%;
     animation: animate 20s  infinite;
+
+    
+    @include devices(tablet) {
+        min-height: 210px;
+        background-size: 1000px 210px;    
+    
+    }
 }
 
 @keyframes animate {
@@ -32,52 +39,31 @@ header {
 
 .wave1 {
     background-image: url(/assets/wave.png);
-    // transform: rotateY(180deg);
-    min-height: 230px;
+    min-height: 150px;
     width: 100%;
-    background-size: 1000px 230px;
+    background-size: 1000px 150px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 30%;
-    animation: animate1 20s infinite;
+    opacity: 40%;
+    animation: animate1 30s infinite;
+
+    @include devices(tablet) {
+        min-height: 180px;
+    background-size: 1000px 180px;    
+    }
 }
 
 @keyframes animate1 {
     0% {
-        background-position-x: 0;
+        background-position-x: 2;
     }
 
     100% {
         background-position-x: -1000px;
     }
 }
-
-// main {
-//     background-image: url(/assets/website-blue.png);
-//     background-size: cover;
-//     background-size: 60%;
-//     background-repeat: no-repeat;
-
-//     @include devices(laptop){
-//         background-size: 32%;
-//     }
-// }
-
-// .projects {
-//     background-image: url(/assets/website-yellow.png);
-//     background-size: cover;
-//     background-size: 85%;
-//     background-repeat: no-repeat;
-//     background-position-x: right;
-
-//     @include devices(laptop){
-//         background-size: 40%;
-//         // background-position-x: right;
-        
-//     }
-// }
 
 
 .pinkWaves {

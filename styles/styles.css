@@ -434,16 +434,22 @@ header {
 
 .wave {
   background-image: url(/assets/wave.png);
-  min-height: 250px;
+  min-height: 180px;
   width: 100%;
-  background-size: 1000px 250px;
+  background-size: 1000px 180px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 40%;
+  opacity: 28%;
   -webkit-animation: animate 20s infinite;
           animation: animate 20s infinite;
+}
+@media (min-width: 481px) {
+  .wave {
+    min-height: 210px;
+    background-size: 1000px 210px;
+  }
 }
 
 @-webkit-keyframes animate {
@@ -465,21 +471,27 @@ header {
 }
 .wave1 {
   background-image: url(/assets/wave.png);
-  min-height: 230px;
+  min-height: 150px;
   width: 100%;
-  background-size: 1000px 230px;
+  background-size: 1000px 150px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 30%;
-  -webkit-animation: animate1 20s infinite;
-          animation: animate1 20s infinite;
+  opacity: 40%;
+  -webkit-animation: animate1 30s infinite;
+          animation: animate1 30s infinite;
+}
+@media (min-width: 481px) {
+  .wave1 {
+    min-height: 180px;
+    background-size: 1000px 180px;
+  }
 }
 
 @-webkit-keyframes animate1 {
   0% {
-    background-position-x: 0;
+    background-position-x: 2;
   }
   100% {
     background-position-x: -1000px;
@@ -488,7 +500,7 @@ header {
 
 @keyframes animate1 {
   0% {
-    background-position-x: 0;
+    background-position-x: 2;
   }
   100% {
     background-position-x: -1000px;
@@ -683,6 +695,7 @@ h1 {
   border: 0px solid #fff;
   height: 35px;
   overflow: hidden;
+  margin-top: 15px;
 }
 @media (min-width: 769px) {
   .words {
@@ -1102,6 +1115,7 @@ video {
 
 .contacts {
   text-align: center;
+  padding: 180px 0 100px 0;
 }
 
 .contacts ul {
@@ -1115,6 +1129,13 @@ video {
 
 .contacts p {
   margin: 40px 0;
+}
+
+@media (min-width: 1025px) {
+  .social {
+    font-size: 80px;
+    font-size: 4rem;
+  }
 }
 
 footer {

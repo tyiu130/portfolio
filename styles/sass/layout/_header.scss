@@ -36,29 +36,11 @@ h1 {
 }
 
 
-
-// .textWave {
-//     padding: 0;
-//     margin: 0;
-//     transform: translate(0, -100%);
-//     color: $primary;
-//     animation: textWave 10s ease-in-out infinite;
-// }
-
-// @keyframes textWave {
-//     0%,100% {
-//         clip-path: polygon(0 26%, 16% 24%, 29% 29%, 45% 42%, 61% 55%, 76% 57%, 85% 55%, 100% 45%, 100% 100%, 0% 100%);
-//     }
-
-//     50% {
-//         clip-path: polygon(0 42%, 14% 55%, 28% 59%, 47% 58%, 63% 49%, 69% 28%, 84% 19%, 100% 22%, 100% 100%, 0% 100%);
-//     }
-// }
-
 .words {
     border: 0px solid #fff;
     height: 35px;
     overflow: hidden;
+    margin-top: 15px;
 
     @include devices(laptop) {
         height: 44px;
@@ -154,6 +136,4 @@ h1 {
 }
 }
 
-// .headerSpan {
-//     margin: 15px 0;
-// }
+

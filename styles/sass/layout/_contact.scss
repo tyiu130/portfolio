@@ -2,6 +2,7 @@
 
 .contacts {
     text-align: center;
+    padding: 180px 0 100px 0;
 }
 
 .contacts ul {
@@ -11,4 +12,11 @@
 
 .contacts p {
     margin: 40px 0;
+}
+
+.social {
+    
+    @include devices(desktop) {
+        @include fontSize(80)
+    }
 }
