@@ -22,17 +22,22 @@
     padding-top: 120px;
 
     @include devices(largeDesktop){
-        padding-top: 330px;
+        padding-top: 250px;
     }
 }
 .profileImg {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
 
     @include devices(tablet) {
         width: 250px;
         height: 250px;
+    }
+
+    @include devices(laptop) {
+        width: 350px;
+        height: 350px;
     }
 
 }
@@ -47,3 +52,11 @@
 
 
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}

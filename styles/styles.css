@@ -880,13 +880,13 @@ h1 {
 }
 @media (min-width: 1200px) {
   .image-container {
-    padding-top: 330px;
+    padding-top: 250px;
   }
 }
 
 .profileImg {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 100%;
 }
 @media (min-width: 481px) {
@@ -895,12 +895,28 @@ h1 {
     height: 250px;
   }
 }
+@media (min-width: 769px) {
+  .profileImg {
+    width: 350px;
+    height: 350px;
+  }
+}
 
 @media (min-width: 769px) {
   .text-container {
     padding: 0 10%;
   }
 }
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 .skills {
   text-align: center;
   position: relative;
