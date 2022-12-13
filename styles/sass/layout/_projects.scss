@@ -23,12 +23,13 @@ video {
 
 .projects h2 {
     text-align: center;
+    margin-top: 0;
 }
 
 .projectList a,
 .contacts a {
     background-color: $secondary;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     margin: 0 5px;
 
@@ -42,7 +43,7 @@ video {
 .contacts a:hover {
     background-color: $tertiary;
     color: $secondary;
-    border: 2px pink solid;
+    border: 2px $quaternary solid;
 }
 
 
@@ -95,7 +96,9 @@ video {
 
 
 .listContainer {
+
     @include devices (desktop) {
+        padding: 0 100px;
         margin-top: 100px;
     }
 

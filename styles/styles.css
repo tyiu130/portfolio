@@ -270,12 +270,18 @@ h2 {
   font-weight: 700;
   color: #fff;
   -webkit-text-stroke: 0.1vw #819CC7;
-  text-shadow: -2px -2px 0px #C3D6F5, -4px -4px 0px #FFE7FD;
+  text-shadow: -2px -2px 0px #C3D6F5, -4px -4px 0px #E4DEFC, -6px -6px 0px #FFE7FD;
 }
 @media (min-width: 769px) {
   h2 {
     font-size: 50px;
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 1025px) {
+  h2 {
+    font-size: 55px;
+    font-size: 2.75rem;
   }
 }
 
@@ -316,10 +322,16 @@ p {
   line-height: 1.5;
   letter-spacing: 1.2px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 481px) {
   p {
     font-size: 23px;
     font-size: 1.15rem;
+  }
+}
+@media (min-width: 769px) {
+  p {
+    font-size: 25px;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 1200px) {
@@ -333,22 +345,23 @@ p {
 .contacts a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 18px;
-  font-size: 0.9rem;
+  font-size: 20px;
+  font-size: 1rem;
   color: #fff;
+  border: 1px solid #fff;
 }
 @media (min-width: 481px) {
   .projectList a,
 .contacts a {
-    font-size: 20px;
-    font-size: 1rem;
+    font-size: 22px;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 769px) {
   .projectList a,
 .contacts a {
-    font-size: 22px;
-    font-size: 1.1rem;
+    font-size: 23px;
+    font-size: 1.15rem;
   }
 }
 @media (min-width: 1025px) {
@@ -479,33 +492,18 @@ header {
   background-image: url(/assets/main-pink-waves.svg);
   background-size: cover;
   width: 100%;
-  min-height: 600px;
+  min-height: 900px;
   background-repeat: no-repeat;
-  position: absolute;
-  bottom: 150px;
-  left: 0;
-  z-index: 0;
-}
-@media (min-width: 481px) {
-  .pinkWaves {
-    bottom: 120px;
-  }
+  overflow-x: hidden;
 }
 @media (min-width: 769px) {
   .pinkWaves {
-    bottom: 50px;
-  }
-}
-@media (min-width: 1025px) {
-  .pinkWaves {
     min-height: 1000px;
-    bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
   .pinkWaves {
     min-height: 1200px;
-    bottom: -10px;
   }
 }
 
@@ -523,7 +521,7 @@ body {
   top: 30px;
   width: 40px;
   cursor: pointer;
-  background-color: #FF9494;
+  background-color: #C3D6F5;
   border: none;
   border-radius: 45%;
   z-index: 100;
@@ -561,7 +559,7 @@ body {
 }
 
 .mobileNav {
-  background-color: #FF9494;
+  background-color: #C3D6F5;
   min-height: 50vh;
   border-radius: 8px;
   width: 100%;
@@ -838,6 +836,11 @@ h1 {
     }
   }
 }
+.about {
+  position: relative;
+  z-index: 50;
+}
+
 .about div {
   text-align: center;
 }
@@ -849,6 +852,15 @@ h1 {
   .about p {
     font-size: 30px;
     font-size: 1.5rem;
+  }
+}
+
+.image-container {
+  padding-top: 120px;
+}
+@media (min-width: 1200px) {
+  .image-container {
+    padding-top: 330px;
   }
 }
 
@@ -872,18 +884,14 @@ h1 {
 .skills {
   text-align: center;
   position: relative;
-  padding: 200px 0;
+  padding: 100px 0;
   z-index: 50;
-}
-@media (min-width: 1025px) {
-  .skills {
-    padding: 400px 0;
-  }
 }
 
 .skills h2 {
   position: relative;
   z-index: 50;
+  margin-top: 0;
 }
 @media (min-width: 769px) {
   .skills h2 {
@@ -986,12 +994,13 @@ video {
 
 .projects h2 {
   text-align: center;
+  margin-top: 0;
 }
 
 .projectList a,
 .contacts a {
-  background-color: #FF9494;
-  padding: 5px;
+  background-color: #C3D6F5;
+  padding: 8px;
   border-radius: 5px;
   margin: 0 5px;
 }
@@ -1005,8 +1014,8 @@ video {
 .projectList a:hover,
 .contacts a:hover {
   background-color: #fff;
-  color: #FF9494;
-  border: 2px pink solid;
+  color: #C3D6F5;
+  border: 2px #E4DEFC solid;
 }
 
 .projectList ul {
@@ -1071,6 +1080,7 @@ video {
 
 @media (min-width: 1025px) {
   .listContainer {
+    padding: 0 100px;
     margin-top: 100px;
   }
 }

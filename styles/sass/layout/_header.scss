@@ -19,9 +19,9 @@ h1 {
     color: $tertiary;
     -webkit-text-stroke: 0.1vw $primary;
     text-shadow: -5px -5px 0px $primary,
-                -8px -8px 0px #C3D6F5,
-                -11px -11px 0px #E4DEFC,
-                -14px -14px 0px #FFE7FD;;
+                -8px -8px 0px $secondary,
+                -11px -11px 0px $quaternary,
+                -14px -14px 0px $senary;
     @include fontSize(85);
 
     @include devices(tablet) {

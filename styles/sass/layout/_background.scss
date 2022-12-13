@@ -84,32 +84,17 @@ header {
     background-image: url(/assets/main-pink-waves.svg);
     background-size: cover;
     width: 100%;
-    min-height: 600px;
+    min-height: 900px;
     background-repeat: no-repeat;
-    position: absolute;
-    bottom: 150px;
-    left: 0;
-    z-index: 0;
+    overflow-x: hidden;
 
-    @include devices(tablet) {
-        bottom: 120px;
-    }
-
-    @include devices(laptop) {
-        bottom: 50px;
-    }
-
-    @include devices(desktop) {
+    @include devices (laptop){
         min-height: 1000px;
-        bottom: 80px;
     }
 
-    @include devices(largeDesktop) {
+    @include devices (largeDesktop){
         min-height: 1200px;
-        bottom: -10px;
     }
-
-
 }
 
 body {

@@ -26,12 +26,17 @@ h2 {
     font-weight: 700;
     color: $tertiary;
     -webkit-text-stroke: 0.1vw $primary;
-    text-shadow: -2px -2px 0px #C3D6F5,
-                -4px -4px 0px #FFE7FD,
-                ;
+    text-shadow: -2px -2px 0px $secondary,
+                -4px -4px 0px $quaternary,
+                -6px -6px 0px $senary;
+                    
 
     @include devices(laptop){
         @include fontSize(50);
+    }
+
+    @include devices(desktop){
+        @include fontSize(55);
     }
 }
 
@@ -67,8 +72,12 @@ p {
     line-height: 1.5;
     letter-spacing: 1.2px;
 
-    @include devices (desktop) {
-        @include fontSize(23);
+    @include devices(tablet){
+        @include fontSize(23)
+    }
+
+    @include devices(laptop){
+        @include fontSize(25)
     }
 
     @include devices (largeDesktop) {
@@ -82,15 +91,16 @@ p {
 .contacts a {
     font-family: $secondaryFont;
     font-weight: 700;
-    @include fontSize(18);
+    @include fontSize(20);
     color: $tertiary;
-
+    border: 1px solid $tertiary;
+    
     @include devices(tablet) {
-        @include fontSize(20);
+        @include fontSize(22);
     }
 
     @include devices(laptop) {
-        @include fontSize(22);
+        @include fontSize(23);
     }
 
     @include devices(desktop) {
