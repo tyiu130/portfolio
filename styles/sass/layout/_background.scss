@@ -86,7 +86,7 @@ header {
     width: 100%;
     min-height: 900px;
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    
 
     @include devices (laptop){
         min-height: 1000px;

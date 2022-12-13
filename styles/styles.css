@@ -494,7 +494,6 @@ header {
   width: 100%;
   min-height: 900px;
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
 @media (min-width: 769px) {
   .pinkWaves {
