@@ -25,7 +25,7 @@ portfolio.setUpEventListeners = function() {
 //Citations: "Fade and scroll items in view while scrolling" by Kevin Powell, Dec 12 2022
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
-    threshold: 1,
+    threshold: 1
     // rootMargin: "0px 0px -100px 0px"
 };
 
