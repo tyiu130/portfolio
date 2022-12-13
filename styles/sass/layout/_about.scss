@@ -9,6 +9,8 @@
 
 }
 
+
+
 .about p {
     padding: 0 10px;
  
@@ -19,7 +21,7 @@
 }
 
 .image-container {
-    padding-top: 120px;
+    padding-top: 100px;
 
     @include devices(largeDesktop){
         padding-top: 250px;
@@ -36,8 +38,8 @@
     }
 
     @include devices(laptop) {
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
     }
 
 }

@@ -2,7 +2,11 @@
 
 .contacts {
     text-align: center;
-    padding: 180px 0 100px 0;
+    padding: 60px 0 40px 0;
+
+    @include devices(largeDesktop) {
+        padding-bottom: 200px 0;
+    }
 }
 
 .contacts ul {
