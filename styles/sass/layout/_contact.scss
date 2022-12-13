@@ -20,3 +20,16 @@
         @include fontSize(80)
     }
 }
+
+.contacts a {
+    background-color: transparent;
+}
+
+.contacts a:hover {
+    border: none;
+}
+
+.contacts a.emailBtn {
+    background-color: $secondary;
+}
+

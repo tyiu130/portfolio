@@ -342,7 +342,7 @@ p {
 }
 
 .projectList a,
-.contacts a {
+.contacts a.emailBtn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -352,21 +352,21 @@ p {
 }
 @media (min-width: 481px) {
   .projectList a,
-.contacts a {
+.contacts a.emailBtn {
     font-size: 22px;
     font-size: 1.1rem;
   }
 }
 @media (min-width: 769px) {
   .projectList a,
-.contacts a {
+.contacts a.emailBtn {
     font-size: 23px;
     font-size: 1.15rem;
   }
 }
 @media (min-width: 1025px) {
   .projectList a,
-.contacts a {
+.contacts a.emailBtn {
     font-size: 25px;
     font-size: 1.25rem;
   }
@@ -1030,7 +1030,7 @@ video {
 }
 
 .projectList a:hover,
-.contacts a:hover {
+.contacts a.emailBtn:hover {
   background-color: #fff;
   color: #C3D6F5;
   border: 2px #E4DEFC solid;
@@ -1136,6 +1136,18 @@ video {
     font-size: 80px;
     font-size: 4rem;
   }
+}
+
+.contacts a {
+  background-color: transparent;
+}
+
+.contacts a:hover {
+  border: none;
+}
+
+.contacts a.emailBtn {
+  background-color: #C3D6F5;
 }
 
 footer {

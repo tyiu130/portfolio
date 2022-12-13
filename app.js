@@ -12,16 +12,14 @@ portfolio.setUpEventListeners = function() {
     navBtn.addEventListener('click', function(){
         navBtn.classList.toggle('active');
         navMenu.classList.toggle('navOpen');
+       
     })
 
-    // //REVEAL ANIMATION
-    // const slide = document.querySelector('.slide');
-    // const appear = document.querySelector('.slideAppear');
-    
-    // slide.addEventListener('scroll', function() {
-    //     slide.classList.add('appear');
-    // }) 
+   navMenu.addEventListener('click', function(){
+        navMenu.classList.toggle('navOpen');
+        navMenu.classList.toggle('active');
 
+   })
 }
 
 
