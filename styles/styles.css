@@ -434,21 +434,21 @@ header {
 
 .wave {
   background-image: url(/assets/wave.png);
-  min-height: 180px;
+  min-height: 190px;
   width: 100%;
-  background-size: 1000px 180px;
+  background-size: 1000px 190px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   opacity: 28%;
-  -webkit-animation: animate 20s infinite;
-          animation: animate 20s infinite;
+  -webkit-animation: animate 15s infinite;
+          animation: animate 15s infinite;
 }
 @media (min-width: 481px) {
   .wave {
-    min-height: 210px;
-    background-size: 1000px 210px;
+    min-height: 250px;
+    background-size: 1000px 250px;
   }
 }
 
@@ -471,27 +471,29 @@ header {
 }
 .wave1 {
   background-image: url(/assets/wave.png);
-  min-height: 150px;
+  min-height: 180px;
   width: 100%;
-  background-size: 1000px 150px;
+  background-size: 1000px 180px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 40%;
-  -webkit-animation: animate1 30s infinite;
-          animation: animate1 30s infinite;
+  opacity: 50%;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation: animate1 10s infinite;
+          animation: animate1 10s infinite;
 }
 @media (min-width: 481px) {
   .wave1 {
-    min-height: 180px;
-    background-size: 1000px 180px;
+    min-height: 170px;
+    background-size: 1000px 170px;
   }
 }
 
 @-webkit-keyframes animate1 {
   0% {
-    background-position-x: 2;
+    background-position-x: 0;
   }
   100% {
     background-position-x: -1000px;
@@ -500,7 +502,7 @@ header {
 
 @keyframes animate1 {
   0% {
-    background-position-x: 2;
+    background-position-x: 0;
   }
   100% {
     background-position-x: -1000px;
