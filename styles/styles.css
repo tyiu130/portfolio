@@ -1110,8 +1110,7 @@ video {
 }
 
 @media (min-width: 1025px) {
-  .projectItems:nth-child(2),
-.projectItems:last-child {
+  .projectItems:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -1198,7 +1197,7 @@ video {
 
 footer {
   text-align: center;
-  margin-top: 40px 0 80px 0;
+  margin-top: 280px 0 80px 0;
 }
 @media (min-width: 481px) {
   footer {

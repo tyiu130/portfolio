@@ -76,8 +76,7 @@ video {
     }
 }
 
-.projectItems:nth-child(2),
-.projectItems:last-child {
+.projectItems:nth-child(even){
 
     @include devices (desktop) {
         flex-direction: row-reverse;
