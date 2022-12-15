@@ -931,7 +931,7 @@ h1 {
 }
 @media (min-width: 769px) {
   .skills h2 {
-    margin-bottom: 0;
+    margin-bottom: 10px 0 20px 0;
   }
 }
 
@@ -1044,8 +1044,7 @@ video {
 
 .projects h2 {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 60px;
+  margin: 30px 0 60px 0;
 }
 
 .projectList a,
@@ -1169,6 +1168,15 @@ video {
   margin: 40px 0;
 }
 
+.contacts h2 {
+  margin: 0;
+}
+@media (min-width: 481px) {
+  .contacts h2 {
+    margin: 60px 0 40px 0;
+  }
+}
+
 @media (min-width: 1025px) {
   .social {
     font-size: 80px;
@@ -1190,5 +1198,10 @@ video {
 
 footer {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px 0 80px 0;
+}
+@media (min-width: 481px) {
+  footer {
+    margin: 80px 0 30px 0;
+  }
 }

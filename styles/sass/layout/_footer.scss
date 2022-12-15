@@ -1,4 +1,8 @@
 footer {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px 0 80px 0;
+
+    @include devices(tablet){
+    margin: 80px 0 30px 0;
+    }
 }

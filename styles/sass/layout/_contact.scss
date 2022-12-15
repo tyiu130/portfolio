@@ -18,6 +18,14 @@
     margin: 40px 0;
 }
 
+.contacts h2 {
+    margin: 0;
+
+    @include devices(tablet){
+        margin: 60px 0 40px 0;
+    }
+}
+
 .social {
     
     @include devices(desktop) {
