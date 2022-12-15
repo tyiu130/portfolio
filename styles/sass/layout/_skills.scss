@@ -28,15 +28,16 @@
 .skillsList ul {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100%/1.5));
+    width: calc((100%/1.3));
     justify-content: center;
-
-    @include devices(tablet) {
-        width: 100%;
-    }
 
     @include devices(laptop) {
         justify-content: space-evenly;
+        width: calc((100%/1.2));
+    }
+
+    @include devices(desktop) {
+        width: 100%;
     }
 }
 
@@ -44,9 +45,14 @@
     margin: 20px 15px;
 }
 
+.devicon {
+    display: flex;
+    flex-direction: column;
+}
 
 .fa-brands,
-.fa-solid {
+.fa-solid,
+.devicon {
     @include fontSize(65);
     color: $primary;
     margin: 10px 0;
@@ -60,7 +66,7 @@
     }
 
     @include devices(desktop) {
-        margin-top: 85px;
+        
         @include fontSize(150);
     }
 }
