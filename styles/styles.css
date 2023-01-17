@@ -250,7 +250,7 @@ p {
   font-family: "Noto Serif", serif;
   margin: 0;
   font-weight: 400;
-  color: #819CC7;
+  color: #6b85ae;
 }
 
 h2,
@@ -269,8 +269,8 @@ h2 {
   margin: 30px 0 20px 0;
   font-weight: 700;
   color: #fff;
-  -webkit-text-stroke: 0.1vw #819CC7;
-  text-shadow: -2px -2px 0px #C3D6F5, -4px -4px 0px #E4DEFC, -6px -6px 0px #FFE7FD;
+  -webkit-text-stroke: 0.1vw #6b85ae;
+  text-shadow: -2px -2px 0px #8fb4f0, -4px -4px 0px #E4DEFC, -6px -6px 0px #FFE7FD;
 }
 @media (min-width: 769px) {
   h2 {
@@ -540,7 +540,7 @@ body {
   top: 30px;
   width: 40px;
   cursor: pointer;
-  background-color: #C3D6F5;
+  background-color: #8fb4f0;
   border: none;
   border-radius: 45%;
   z-index: 100;
@@ -578,7 +578,7 @@ body {
 }
 
 .mobileNav {
-  background-color: #C3D6F5;
+  background-color: #8fb4f0;
   min-height: 50vh;
   border-radius: 8px;
   width: 100%;
@@ -629,6 +629,10 @@ body {
   visibility: hidden;
   position: relative;
   z-index: 50;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
 @media (min-width: 769px) {
   .regularNav {
@@ -656,7 +660,7 @@ body {
 
 span {
   display: block;
-  color: #819CC7;
+  color: #6b85ae;
   margin-top: 15px;
   font-family: "Noto Serif", serif;
   font-size: 35px;
@@ -675,8 +679,8 @@ h1 {
   padding-top: 220px;
   font-weight: 700;
   color: #fff;
-  -webkit-text-stroke: 0.1vw #819CC7;
-  text-shadow: -5px -5px 0px #819CC7, -8px -8px 0px #C3D6F5, -11px -11px 0px #E4DEFC, -14px -14px 0px #FFE7FD;
+  -webkit-text-stroke: 0.1vw #6b85ae;
+  text-shadow: -5px -5px 0px #6b85ae, -8px -8px 0px #8fb4f0, -11px -11px 0px #E4DEFC, -14px -14px 0px #FFE7FD;
   font-size: 85px;
   font-size: 4.25rem;
 }
@@ -990,7 +994,7 @@ h1 {
 .devicon {
   font-size: 65px;
   font-size: 3.25rem;
-  color: #819CC7;
+  color: #6b85ae;
   margin: 10px 0;
 }
 @media (min-width: 481px) {
@@ -1049,7 +1053,7 @@ video {
 
 .projectList a,
 .contacts a {
-  background-color: #C3D6F5;
+  background-color: #8fb4f0;
   padding: 8px;
   border-radius: 5px;
   margin: 0 5px;
@@ -1064,8 +1068,8 @@ video {
 .projectList a:hover,
 .contacts a.emailBtn:hover {
   background-color: #fff;
-  color: #C3D6F5;
-  border: 2px #E4DEFC solid;
+  color: #8fb4f0;
+  border: #E4DEFC solid;
 }
 
 .projectList ul {
@@ -1192,7 +1196,7 @@ video {
 }
 
 .contacts a.emailBtn {
-  background-color: #C3D6F5;
+  background-color: #8fb4f0;
 }
 
 footer {

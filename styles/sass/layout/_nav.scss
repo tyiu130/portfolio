@@ -80,6 +80,7 @@
     visibility: hidden;
     position: relative;
     z-index: 50;
+    transition: transform 1s ease-out;
 
     @include devices(laptop){
         visibility: visible;
