@@ -8,6 +8,8 @@ portfolio.init = function(){
 portfolio.setUpEventListeners = function() {
     const navBtn = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.mobileNav');
+    const navLinks = document.querySelector('.mobileLinks');
+
 
     navBtn.addEventListener('click', function(){
         navBtn.classList.toggle('active');
@@ -17,10 +19,15 @@ portfolio.setUpEventListeners = function() {
 
    navMenu.addEventListener('click', function(){
         navMenu.classList.toggle('navOpen');
-        navMenu.classList.toggle('active');
+        navBtn.classList.toggle('active');
 
    })
 
+   navLinks.addEventListener('click', function(){
+       navBtn.classList.toggle('inactive');
+   })
+
+ 
 
 //Citations: "Fade and scroll items in view while scrolling" by Kevin Powell, Dec 12 2022
 const faders = document.querySelectorAll('.fade-in');
