@@ -352,21 +352,21 @@ p {
 }
 @media (min-width: 481px) {
   .projectList a,
-.contacts a.emailBtn {
+  .contacts a.emailBtn {
     font-size: 22px;
     font-size: 1.1rem;
   }
 }
 @media (min-width: 769px) {
   .projectList a,
-.contacts a.emailBtn {
+  .contacts a.emailBtn {
     font-size: 23px;
     font-size: 1.15rem;
   }
 }
 @media (min-width: 1025px) {
   .projectList a,
-.contacts a.emailBtn {
+  .contacts a.emailBtn {
     font-size: 25px;
     font-size: 1.25rem;
   }
@@ -540,25 +540,22 @@ body {
   top: 30px;
   width: 40px;
   cursor: pointer;
-  background-color: #8fb4f0;
+  background-color: transparent;
   border: none;
-  border-radius: 45%;
+  border-radius: 0;
   z-index: 100;
 }
 
 .hamburger .bar,
-.hamburger:after,
-.hamburger:before {
+.hamburger:before,
+.hamburger:after {
   content: "";
-  display: block;
-  width: 25px;
   height: 4px;
-  background-color: #fff;
   margin: 6px 0px;
+  display: block;
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 30%;
-  margin-left: 3px;
 }
 
 .hamburger.active:before {
@@ -577,12 +574,28 @@ body {
   opacity: 0;
 }
 
+.hamburger.inactive:before {
+  width: 100%;
+  -webkit-transform: rotate(0) translate(0, 0);
+          transform: rotate(0) translate(0, 0);
+}
+
+.hamburger.inactive:after {
+  width: 100%;
+  -webkit-transform: rotate(0) translate(0, 0);
+          transform: rotate(0) translate(0, 0);
+}
+
+.hamburger.inactive .bar {
+  opacity: 100;
+}
+
 .mobileNav {
   background-color: #8fb4f0;
   min-height: 50vh;
   border-radius: 8px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 100%;
   display: -webkit-box;
@@ -609,10 +622,6 @@ body {
 
 .mobileNav a:nth-child(2) {
   margin: 60px;
-}
-
-.mobileNav a {
-  color: #fff;
 }
 
 .regularNav {
@@ -647,13 +656,13 @@ body {
 
 @media (min-width: 769px) {
   .hamburger,
-.mobileNav {
+  .mobileNav {
     visibility: hidden;
   }
 }
 @media (min-width: 1025px) {
   .hamburger,
-.mobileNav {
+  .mobileNav {
     visibility: hidden;
   }
 }
@@ -999,24 +1008,24 @@ h1 {
 }
 @media (min-width: 481px) {
   .fa-brands,
-.fa-solid,
-.devicon {
+  .fa-solid,
+  .devicon {
     font-size: 80px;
     font-size: 4rem;
   }
 }
 @media (min-width: 769px) {
   .fa-brands,
-.fa-solid,
-.devicon {
+  .fa-solid,
+  .devicon {
     font-size: 100px;
     font-size: 5rem;
   }
 }
 @media (min-width: 1025px) {
   .fa-brands,
-.fa-solid,
-.devicon {
+  .fa-solid,
+  .devicon {
     font-size: 150px;
     font-size: 7.5rem;
   }
@@ -1060,7 +1069,7 @@ video {
 }
 @media (min-width: 481px) {
   .projectList a,
-.contacts a {
+  .contacts a {
     padding: 10px 15px;
   }
 }
