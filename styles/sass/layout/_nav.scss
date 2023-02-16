@@ -1,5 +1,6 @@
+
 .hamburger {
-    position: absolute;
+    position: fixed;
     display:block;
     right: 45px;
     top: 30px;
@@ -8,7 +9,7 @@
     background-color: transparent;
     border: none;
     border-radius: 0;
-    z-index: 100;
+    z-index: 210;
 
 }
 
@@ -19,37 +20,26 @@
     height: 4px;
     margin: 6px 0px;
     display: block;
-    background-color: $tertiary;
+    background-color: $primary;
     transition: 0.4s;
 }
 
-// .hamburger .bar,
-// .hamburger:after,
-// .hamburger:before {
-//     content: '';
-//     display: block;
-//     width: 25px;
-//     height: 4px;
-//     background-color: $tertiary;
-//     margin: 6px 0px;
-//     transition: 0.4s;
-//     border-radius: 30%;
-//     margin-left: 3px;
-    
-// }
 
 .hamburger.active:before {
     width:60%;
     transform: rotate(-45deg) translate(-4px, 16px);
+    background-color: $tertiary;
 }
 
 .hamburger.active:after {
     width: 60%;
     transform: rotate(45deg) translate(-6px, -2px);
+    background-color: $tertiary;
 }
 
 .hamburger.active .bar {
     opacity: 0;
+    background-color: $tertiary;
 }
 
 
@@ -74,17 +64,15 @@
     min-height: 50vh;
     border-radius: 8px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top:0;
     left:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 50;
-    transition: 0.4s;
-
-    
+    z-index: 200;
+    transition: 0.4s;    
 }
 
 .navOpen {
