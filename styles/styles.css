@@ -534,7 +534,7 @@ body {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   display: block;
   right: 45px;
   top: 30px;
@@ -543,7 +543,7 @@ body {
   background-color: transparent;
   border: none;
   border-radius: 0;
-  z-index: 100;
+  z-index: 210;
 }
 
 .hamburger .bar,
@@ -553,7 +553,7 @@ body {
   height: 4px;
   margin: 6px 0px;
   display: block;
-  background-color: #fff;
+  background-color: #6b85ae;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -562,16 +562,19 @@ body {
   width: 60%;
   -webkit-transform: rotate(-45deg) translate(-4px, 16px);
           transform: rotate(-45deg) translate(-4px, 16px);
+  background-color: #fff;
 }
 
 .hamburger.active:after {
   width: 60%;
   -webkit-transform: rotate(45deg) translate(-6px, -2px);
           transform: rotate(45deg) translate(-6px, -2px);
+  background-color: #fff;
 }
 
 .hamburger.active .bar {
   opacity: 0;
+  background-color: #fff;
 }
 
 .hamburger.inactive:before {
@@ -595,7 +598,7 @@ body {
   min-height: 50vh;
   border-radius: 8px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 100%;
   display: -webkit-box;
@@ -611,7 +614,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 50;
+  z-index: 200;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

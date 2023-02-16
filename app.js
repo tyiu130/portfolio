@@ -9,6 +9,7 @@ portfolio.setUpEventListeners = function() {
     const navBtn = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.mobileNav');
     const navLinks = document.querySelector('.mobileLinks');
+    const navAbout = document.querySelector('.about');
 
 
     navBtn.addEventListener('click', function(){
@@ -26,6 +27,11 @@ portfolio.setUpEventListeners = function() {
    navLinks.addEventListener('click', function(){
        navBtn.classList.toggle('inactive');
    })
+
+    navAbout.addEventListener('click', function () {
+        navBtn.classList.toggle('inactive');
+    })
+
 
  
 
