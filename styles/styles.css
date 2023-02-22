@@ -619,6 +619,10 @@ body {
   transition: 0.4s;
 }
 
+.mobileNav a:hover {
+  text-decoration: underline;
+}
+
 .navOpen {
   left: 0;
 }
@@ -707,6 +711,14 @@ h1 {
     font-size: 6.5rem;
     padding-top: 380px;
   }
+}
+
+.regularNav a {
+  color: #6b85ae;
+}
+
+.regularNav a:hover {
+  text-decoration: underline;
 }
 
 .words {
@@ -1069,6 +1081,8 @@ video {
   padding: 8px;
   border-radius: 5px;
   margin: 0 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 481px) {
   .projectList a,
@@ -1145,7 +1159,7 @@ video {
 
 @media (min-width: 1025px) {
   .listContainer {
-    margin-top: 100px;
+    margin: 100px 50px;
   }
 }
 @media (min-width: 1200px) {
