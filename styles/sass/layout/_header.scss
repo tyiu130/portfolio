@@ -35,6 +35,14 @@ h1 {
     
 }
 
+.regularNav a {
+    color: $primary;
+}
+
+.regularNav a:hover {
+    text-decoration: underline;
+}
+
 
 .words {
     border: 0px solid #fff;

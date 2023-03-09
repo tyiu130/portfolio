@@ -32,6 +32,7 @@ video {
     padding: 8px;
     border-radius: 5px;
     margin: 0 5px;
+    transition: 0.3s;
 
     @include devices (tablet) {
         padding: 10px 15px;
@@ -44,6 +45,7 @@ video {
     background-color: $tertiary;
     color: $secondary;
     border: $quaternary solid;
+
 }
 
 
@@ -97,8 +99,7 @@ video {
 .listContainer {
 
     @include devices (desktop) {
-        padding: 0 100px;
-        margin-top: 100px;
+        margin: 100px 50px;
     }
 
     @include devices (largeDesktop) {

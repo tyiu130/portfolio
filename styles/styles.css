@@ -352,21 +352,21 @@ p {
 }
 @media (min-width: 481px) {
   .projectList a,
-.contacts a.emailBtn {
+  .contacts a.emailBtn {
     font-size: 22px;
     font-size: 1.1rem;
   }
 }
 @media (min-width: 769px) {
   .projectList a,
-.contacts a.emailBtn {
+  .contacts a.emailBtn {
     font-size: 23px;
     font-size: 1.15rem;
   }
 }
 @media (min-width: 1025px) {
   .projectList a,
-.contacts a.emailBtn {
+  .contacts a.emailBtn {
     font-size: 25px;
     font-size: 1.25rem;
   }
@@ -534,47 +534,63 @@ body {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   display: block;
   right: 45px;
   top: 30px;
   width: 40px;
   cursor: pointer;
-  background-color: #8fb4f0;
+  background-color: transparent;
   border: none;
-  border-radius: 45%;
-  z-index: 100;
+  border-radius: 0;
+  z-index: 210;
 }
 
 .hamburger .bar,
-.hamburger:after,
-.hamburger:before {
+.hamburger:before,
+.hamburger:after {
   content: "";
-  display: block;
-  width: 25px;
   height: 4px;
-  background-color: #fff;
   margin: 6px 0px;
+  display: block;
+  background-color: #6b85ae;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 30%;
-  margin-left: 3px;
 }
 
 .hamburger.active:before {
   width: 60%;
   -webkit-transform: rotate(-45deg) translate(-4px, 16px);
           transform: rotate(-45deg) translate(-4px, 16px);
+  background-color: #fff;
 }
 
 .hamburger.active:after {
   width: 60%;
   -webkit-transform: rotate(45deg) translate(-6px, -2px);
           transform: rotate(45deg) translate(-6px, -2px);
+  background-color: #fff;
 }
 
 .hamburger.active .bar {
   opacity: 0;
+  background-color: #fff;
+}
+
+.hamburger.inactive:before {
+  width: 100%;
+  -webkit-transform: rotate(0) translate(0, 0);
+          transform: rotate(0) translate(0, 0);
+}
+
+.hamburger.inactive:after {
+  width: 100%;
+  -webkit-transform: rotate(0) translate(0, 0);
+          transform: rotate(0) translate(0, 0);
+}
+
+.hamburger.inactive .bar {
+  opacity: 100;
 }
 
 .mobileNav {
@@ -598,9 +614,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 50;
+  z-index: 200;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.mobileNav a:hover {
+  text-decoration: underline;
 }
 
 .navOpen {
@@ -609,10 +629,6 @@ body {
 
 .mobileNav a:nth-child(2) {
   margin: 60px;
-}
-
-.mobileNav a {
-  color: #fff;
 }
 
 .regularNav {
@@ -647,13 +663,13 @@ body {
 
 @media (min-width: 769px) {
   .hamburger,
-.mobileNav {
+  .mobileNav {
     visibility: hidden;
   }
 }
 @media (min-width: 1025px) {
   .hamburger,
-.mobileNav {
+  .mobileNav {
     visibility: hidden;
   }
 }
@@ -695,6 +711,14 @@ h1 {
     font-size: 6.5rem;
     padding-top: 380px;
   }
+}
+
+.regularNav a {
+  color: #6b85ae;
+}
+
+.regularNav a:hover {
+  text-decoration: underline;
 }
 
 .words {
@@ -999,24 +1023,24 @@ h1 {
 }
 @media (min-width: 481px) {
   .fa-brands,
-.fa-solid,
-.devicon {
+  .fa-solid,
+  .devicon {
     font-size: 80px;
     font-size: 4rem;
   }
 }
 @media (min-width: 769px) {
   .fa-brands,
-.fa-solid,
-.devicon {
+  .fa-solid,
+  .devicon {
     font-size: 100px;
     font-size: 5rem;
   }
 }
 @media (min-width: 1025px) {
   .fa-brands,
-.fa-solid,
-.devicon {
+  .fa-solid,
+  .devicon {
     font-size: 150px;
     font-size: 7.5rem;
   }
@@ -1057,10 +1081,12 @@ video {
   padding: 8px;
   border-radius: 5px;
   margin: 0 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 481px) {
   .projectList a,
-.contacts a {
+  .contacts a {
     padding: 10px 15px;
   }
 }
@@ -1133,8 +1159,7 @@ video {
 
 @media (min-width: 1025px) {
   .listContainer {
-    padding: 0 100px;
-    margin-top: 100px;
+    margin: 100px 50px;
   }
 }
 @media (min-width: 1200px) {
