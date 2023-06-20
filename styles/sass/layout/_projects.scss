@@ -21,13 +21,15 @@ video {
     }
 }
 
-.projects h2 {
+.projects h2,
+.designs h2 {
     text-align: center;
     margin: 30px 0 60px 0;
 }
 
 .projectList a,
-.contacts a {
+.contacts a,
+.designList a {
     background-color: $secondary;
     padding: 8px;
     border-radius: 5px;
@@ -41,7 +43,8 @@ video {
 }
 
 .projectList a:hover,
-.contacts a.emailBtn:hover {
+.contacts a.emailBtn:hover,
+.designList a:hover {
     background-color: $tertiary;
     color: $secondary;
     border: $quaternary solid;
@@ -49,7 +52,8 @@ video {
 }
 
 
-.projectList ul {
+.projectList ul, 
+.designList ul {
     text-align: center;
 
     @include devices (laptop) {
@@ -64,7 +68,7 @@ video {
 
 }
 
-.projectItems {
+.projectItems, .designItems {
     margin: 50px 0;
 
     @include devices (laptop) {
@@ -78,7 +82,8 @@ video {
     }
 }
 
-.projectItems:nth-child(even){
+.projectItems:nth-child(even),
+.designItems:nth-child(odd){
 
     @include devices (desktop) {
         flex-direction: row-reverse;
@@ -86,12 +91,14 @@ video {
 
 }
 
-.projectList p {
+.projectList p, 
+.designList p {
     margin-bottom: 30px;
     padding: 0 10px;
 }
 
-.projectList h4 {
+.projectList h4,
+.design h4 {
     margin: 10px 0;
 }
 
@@ -107,7 +114,7 @@ video {
     }
 }
 
-.projects {
+.projects, .designs {
     position: relative;
     z-index: 50;
 }

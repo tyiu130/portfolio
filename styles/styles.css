@@ -342,7 +342,8 @@ p {
 }
 
 .projectList a,
-.contacts a.emailBtn {
+.contacts a.emailBtn,
+.designList a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -352,21 +353,24 @@ p {
 }
 @media (min-width: 481px) {
   .projectList a,
-  .contacts a.emailBtn {
+  .contacts a.emailBtn,
+  .designList a {
     font-size: 22px;
     font-size: 1.1rem;
   }
 }
 @media (min-width: 769px) {
   .projectList a,
-  .contacts a.emailBtn {
+  .contacts a.emailBtn,
+  .designList a {
     font-size: 23px;
     font-size: 1.15rem;
   }
 }
 @media (min-width: 1025px) {
   .projectList a,
-  .contacts a.emailBtn {
+  .contacts a.emailBtn,
+  .designList a {
     font-size: 25px;
     font-size: 1.25rem;
   }
@@ -1070,13 +1074,15 @@ video {
   }
 }
 
-.projects h2 {
+.projects h2,
+.designs h2 {
   text-align: center;
   margin: 30px 0 60px 0;
 }
 
 .projectList a,
-.contacts a {
+.contacts a,
+.designList a {
   background-color: #8fb4f0;
   padding: 8px;
   border-radius: 5px;
@@ -1086,23 +1092,27 @@ video {
 }
 @media (min-width: 481px) {
   .projectList a,
-  .contacts a {
+  .contacts a,
+  .designList a {
     padding: 10px 15px;
   }
 }
 
 .projectList a:hover,
-.contacts a.emailBtn:hover {
+.contacts a.emailBtn:hover,
+.designList a:hover {
   background-color: #fff;
   color: #8fb4f0;
   border: #E4DEFC solid;
 }
 
-.projectList ul {
+.projectList ul,
+.designList ul {
   text-align: center;
 }
 @media (min-width: 769px) {
-  .projectList ul {
+  .projectList ul,
+  .designList ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1111,7 +1121,8 @@ video {
   }
 }
 @media (min-width: 1025px) {
-  .projectList ul {
+  .projectList ul,
+  .designList ul {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-orient: vertical;
@@ -1121,16 +1132,16 @@ video {
   }
 }
 
-.projectItems {
+.projectItems, .designItems {
   margin: 50px 0;
 }
 @media (min-width: 769px) {
-  .projectItems {
+  .projectItems, .designItems {
     width: calc(50% - 20px);
   }
 }
 @media (min-width: 1025px) {
-  .projectItems {
+  .projectItems, .designItems {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1140,7 +1151,8 @@ video {
 }
 
 @media (min-width: 1025px) {
-  .projectItems:nth-child(even) {
+  .projectItems:nth-child(even),
+  .designItems:nth-child(odd) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -1148,12 +1160,14 @@ video {
   }
 }
 
-.projectList p {
+.projectList p,
+.designList p {
   margin-bottom: 30px;
   padding: 0 10px;
 }
 
-.projectList h4 {
+.projectList h4,
+.design h4 {
   margin: 10px 0;
 }
 
@@ -1168,7 +1182,7 @@ video {
   }
 }
 
-.projects {
+.projects, .designs {
   position: relative;
   z-index: 50;
 }

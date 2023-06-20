@@ -88,7 +88,8 @@ p {
 
 
 .projectList a,
-.contacts a.emailBtn {
+.contacts a.emailBtn,
+.designList a {
     font-family: $secondaryFont;
     font-weight: 700;
     @include fontSize(20);
