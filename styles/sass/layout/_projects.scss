@@ -131,17 +131,45 @@ video {
 }
 
 .modalContent{
-    // background-color: rgba(0, 0, 0, 0.5);
-    margin: 15% auto;
     padding: 20px;
     width: 50%;
     border-radius: 30px;
+
+    @include devices (mobile) {
+        margin-left: 5%;
+    }
+
+    @include devices (tablet) {
+        margin-left: 20%;
+    }
+
+    @include devices (laptop) {
+        margin: 15% auto;
+    }
+
+
 }
 
 #modalVideo {
     border-radius: 30px;
-    background-color: white;
-
+    background-color: #E6E6FA;
+    
 }
 
+#closeModalBtn {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: $tertiary;
+    border-radius: 360px;
+    width: 40px;
+}
 
+#closeModalBtn:hover {
+    cursor: pointer;
+}
+
+#closeModalBG {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}

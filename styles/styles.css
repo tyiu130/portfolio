@@ -1198,15 +1198,50 @@ video {
 }
 
 .modalContent {
-  margin: 15% auto;
   padding: 20px;
   width: 50%;
   border-radius: 30px;
 }
+@media (min-width: 320px) {
+  .modalContent {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 481px) {
+  .modalContent {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 769px) {
+  .modalContent {
+    margin: 15% auto;
+  }
+}
 
 #modalVideo {
   border-radius: 30px;
-  background-color: white;
+  background-color: #E6E6FA;
+}
+
+#closeModalBtn {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 360px;
+  width: 40px;
+}
+
+#closeModalBtn:hover {
+  cursor: pointer;
+}
+
+#closeModalBG {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
 }
 
 .contacts {
