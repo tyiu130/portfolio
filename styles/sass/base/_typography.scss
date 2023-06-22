@@ -29,8 +29,8 @@ h2 {
     text-shadow: -2px -2px 0px $secondary,
                 -4px -4px 0px $quaternary,
                 -6px -6px 0px $senary;
-                    
 
+                
     @include devices(laptop){
         @include fontSize(50);
     }
