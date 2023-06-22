@@ -1098,6 +1098,22 @@ video {
   }
 }
 
+@media (min-width: 320px) {
+  .designList a {
+    padding: 10px 2px;
+  }
+}
+@media (min-width: 769px) {
+  .designList a {
+    padding: 10px 6px;
+  }
+}
+@media (min-width: 1025px) {
+  .designList a {
+    padding: 10px 15px;
+  }
+}
+
 .projectList a:hover,
 .contacts a.emailBtn:hover,
 .designList a:hover {

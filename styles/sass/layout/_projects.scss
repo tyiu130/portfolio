@@ -42,6 +42,19 @@ video {
 
 }
 
+.designList a {
+    @include devices (mobile) {
+        padding: 10px 2px;
+    }
+
+    @include devices (laptop) {
+        padding: 10px 6px;
+    }
+    @include devices (desktop) {
+        padding: 10px 15px;
+    }
+}
+
 .projectList a:hover,
 .contacts a.emailBtn:hover,
 .designList a:hover {
@@ -173,3 +186,4 @@ video {
     margin-bottom: 15px;
 
 }
+
