@@ -29,8 +29,8 @@ h2 {
     text-shadow: -2px -2px 0px $secondary,
                 -4px -4px 0px $quaternary,
                 -6px -6px 0px $senary;
-                    
 
+                
     @include devices(laptop){
         @include fontSize(50);
     }
@@ -60,9 +60,9 @@ h4 {
 }
 
 a {
-    @include fontSize(40);
+    @include fontSize(30);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 400;
     color: $tertiary;
     font-family: $secondaryFont;
 }
@@ -88,7 +88,8 @@ p {
 
 
 .projectList a,
-.contacts a.emailBtn {
+.contacts a.emailBtn,
+.designList a {
     font-family: $secondaryFont;
     font-weight: 700;
     @include fontSize(20);

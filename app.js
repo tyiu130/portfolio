@@ -57,5 +57,46 @@ faders.forEach(fader => {
 })
 }
 
+//modal
+
+//Get modal element
+const modal = document.getElementById("myModal");
+
+//Get link that opens modal
+const openModalLink = document.getElementById("openModalLink");
+
+//get span that closes modal
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+//get video element
+const modalVideo = document.getElementById("modalVideo");
+
+//function to open modal
+function openModal() {
+    modal.style.display = "block";
+    modalVideo.load();
+}
+
+//function to close modal
+function closeModal() {
+    modal.style.display = "none";
+    
+}
+
+//event listener to open modal
+openModalLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal();
+})
+
+//event listener to close modal
+closeModalBtn.addEventListener("click", closeModal);
+
+// even listener to close modal when clicked outside of modal
+window.addEventListener("click", function(event){
+    if(event.target == modal) {
+        closeModal();
+    }
+})
 
 portfolio.init();

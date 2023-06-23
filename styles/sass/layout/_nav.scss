@@ -76,9 +76,15 @@
     
 }
 
-.mobileNav a:hover {
-    text-decoration: underline;
+.mobileNav a:hover,
+.regularNav a:hover {
+    text-decoration: underline overline;
 }
+
+.regularNav a {
+    color: $primary;
+}
+
 
 .navOpen {
     left: 0;
@@ -86,8 +92,9 @@
 }
 
 
-.mobileNav a:nth-child(2) {
-    margin: 60px ;
+.mobileNav {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 // .mobileNav a {
@@ -96,8 +103,8 @@
 
 .regularNav {
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    // justify-content: space-evenly;
     padding-top: 70px;
     visibility: hidden;
     position: relative;
@@ -113,6 +120,9 @@
     }
 }
 
+.regularNav a {
+    padding: 0 35px;
+}
 
 .hamburger,
 .mobileNav {
