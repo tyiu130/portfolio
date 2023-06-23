@@ -310,10 +310,10 @@ h4 {
 }
 
 a {
-  font-size: 40px;
-  font-size: 2rem;
+  font-size: 30px;
+  font-size: 1.5rem;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
@@ -429,6 +429,7 @@ ul {
   }
 }
 header {
+  background-image: url(/assets/header2-haikei.svg);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -512,7 +513,7 @@ header {
   }
 }
 .pinkWaves {
-  background-image: url(/assets/main-pink-waves.svg);
+  background-image: url(/assets/stacked-waves-haikei.svg);
   background-size: cover;
   width: 100%;
   min-height: 900px;
@@ -622,28 +623,35 @@ body {
   transition: 0.4s;
 }
 
-.mobileNav a:hover {
-  text-decoration: underline;
+.mobileNav a:hover,
+.regularNav a:hover {
+  text-decoration: underline overline;
+}
+
+.regularNav a {
+  color: #6b85ae;
 }
 
 .navOpen {
   left: 0;
 }
 
-.mobileNav a:nth-child(2) {
-  margin: 60px;
+.mobileNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .regularNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 70px;
   visibility: hidden;
   position: relative;
@@ -662,6 +670,10 @@ body {
   .regularNav {
     visibility: visible;
   }
+}
+
+.regularNav a {
+  padding: 0 35px;
 }
 
 @media (min-width: 769px) {
@@ -714,14 +726,6 @@ h1 {
     font-size: 6.5rem;
     padding-top: 380px;
   }
-}
-
-.regularNav a {
-  color: #6b85ae;
-}
-
-.regularNav a:hover {
-  text-decoration: underline;
 }
 
 .words {

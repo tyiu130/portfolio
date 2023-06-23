@@ -60,9 +60,9 @@ h4 {
 }
 
 a {
-    @include fontSize(40);
+    @include fontSize(30);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 400;
     color: $tertiary;
     font-family: $secondaryFont;
 }
