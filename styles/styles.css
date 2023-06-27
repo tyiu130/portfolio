@@ -1237,19 +1237,22 @@ video {
   }
 }
 
-#modalVideo {
+#modalVideo,
+#modalVideo2 {
   border-radius: 30px;
   background-color: #E6E6FA;
 }
 
-#closeModalBtn {
+#closeModalBtn,
+#closeModalBtn2 {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   border-radius: 360px;
   width: 40px;
 }
 
-#closeModalBtn:hover {
+#closeModalBtn:hover,
+#closeModalBtn2:hover {
   cursor: pointer;
 }
 
