@@ -99,4 +99,46 @@ window.addEventListener("click", function(event){
     }
 })
 
+//modal2
+
+//Get modal element
+const modal2 = document.getElementById("myModal2");
+
+//Get link that opens modal
+const openModalLink2 = document.getElementById("openModalLink2");
+
+//get span that closes modal
+const closeModalBtn2 = document.getElementById("closeModalBtn2");
+
+//get video element
+const modalVideo2 = document.getElementById("modalVideo2");
+
+//function to open modal
+function openModal2() {
+    modal2.style.display = "block";
+    modalVideo.load();
+}
+
+//function to close modal
+function closeModal2() {
+    modal2.style.display = "none";
+
+}
+
+//event listener to open modal
+openModalLink2.addEventListener("click", function (event) {
+    event.preventDefault();
+    openModal2();
+})
+
+//event listener to close modal
+closeModalBtn2.addEventListener("click", closeModal2);
+
+// even listener to close modal when clicked outside of modal
+window.addEventListener("click", function (event) {
+    if (event.target == modal2) {
+        closeModal2();
+    }
+})
+
 portfolio.init();
